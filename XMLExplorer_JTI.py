@@ -27,7 +27,7 @@ def getLayout(quesName, value, labelName, xml):
         myCat = []
         myLabel = []
         TempDict = {}
-        
+
         for ques in MddTree.iter(quesName):
             #print(ques.text)
             myQues = ques.text
@@ -43,10 +43,11 @@ def getLayout(quesName, value, labelName, xml):
                 for key in myTempVal:
                     if key == 'en-US':
                         #print(label.text)
-                        tempLabel = cleanHtml(label.text)
-                        #if len(tempLabel) == 0 or tempLabel:
-                            #tempLabel = "InproperLabel"
-                        #print(tempLabel)
+                        combineLabel = ""
+                        for t in label.itertext():
+                            combineLabel = combineLabel + " " + t
+                        #tempLabel = cleanHtml(label.text)
+                        tempLabel = cleanHtml(combineLabel)
                         myLabel.append(tempLabel)
                         totalyNeedlessFlag = True
 
