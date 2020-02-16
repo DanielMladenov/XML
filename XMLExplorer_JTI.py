@@ -67,16 +67,16 @@ def getLayout(quesName, value, labelName, xml):
 #C:\\Users\\Daniel.Mladenov\\github\\JTI\\
 checkIfWork = getLayout(quesName = "name", value = "value", labelName = "text", xml = 'xml290120MDD.xml')
 checkIfWork = pd.DataFrame(checkIfWork)
-#print(checkIfWork)
-#C:\\Users\\Daniel.Mladenov\\github\\JTI\\
+
 checkIfWork.to_csv(r'TestCsv.csv')
 
-
+# The check for the dublicated labels of categories in the same question
 for ques in checkIfWork.columns:
     series = pd.Series(checkIfWork[str(ques)].values)
     series.replace('InproperLabel', np.nan, inplace=True)
     series = series.dropna()
-    #print(series.dropna())
-    if  any(series.duplicated()):
-        listOfDup = series[series.duplicated()]
-        print( ques + ' Ima dublikat - ' + str(listOfDup) )
+    if len(series.index) > 2:
+        #print(series.dropna())
+        if  any(series.duplicated()):
+            listOfDup = series[series.duplicated()]
+            print( ques + ' Ima dublikat - ' + str(listOfDup) )
