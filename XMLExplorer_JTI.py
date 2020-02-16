@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import numpy as np
 import pandas as pd
 import re
 
@@ -6,8 +7,7 @@ import re
 def cleanHtml(row_string):
     if row_string:
         cleanr = re.compile('<.*?>')
-        #cleantext = re.sub(cleanr, '', row_string)
-        cleantext = row_string.replace('</b>','')
+        cleantext = re.sub(cleanr, '', row_string)
         return str(cleantext)
     else:
         return str('InproperLabel')
@@ -27,8 +27,9 @@ def getLayout(quesName, value, labelName, xml):
         myCat = []
         myLabel = []
         TempDict = {}
+        
         for ques in MddTree.iter(quesName):
-            print(ques.text)
+            #print(ques.text)
             myQues = ques.text
         for cat in MddTree.iter(value):
             #print(cat.text)
@@ -45,7 +46,7 @@ def getLayout(quesName, value, labelName, xml):
                         tempLabel = cleanHtml(label.text)
                         #if len(tempLabel) == 0 or tempLabel:
                             #tempLabel = "InproperLabel"
-                        print(tempLabel)
+                        #print(tempLabel)
                         myLabel.append(tempLabel)
                         totalyNeedlessFlag = True
 
@@ -72,8 +73,9 @@ checkIfWork.to_csv(r'TestCsv.csv')
 
 for ques in checkIfWork.columns:
     series = pd.Series(checkIfWork[str(ques)].values)
+    series.replace('InproperLabel', np.nan, inplace=True)
     series = series.dropna()
     #print(series.dropna())
     if  any(series.duplicated()):
         listOfDup = series[series.duplicated()]
-        #print( ques + ' Ima dublikat - ' + str(listOfDup) )
+        print( ques + ' Ima dublikat - ' + str(listOfDup) )
