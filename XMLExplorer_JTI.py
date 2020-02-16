@@ -62,12 +62,12 @@ def getLayout(quesName, value, labelName, xml):
     return  finalDict
 
 
-
-checkIfWork = getLayout(quesName = "name", value = "value", labelName = "text", xml = 'C:\\Users\\Daniel.Mladenov\\github\\JTI\\xml290120MDD.xml')
+#C:\\Users\\Daniel.Mladenov\\github\\JTI\\
+checkIfWork = getLayout(quesName = "name", value = "value", labelName = "text", xml = 'xml290120MDD.xml')
 checkIfWork = pd.DataFrame(checkIfWork)
 #print(checkIfWork)
-
-checkIfWork.to_csv(r'C:\\Users\\Daniel.Mladenov\\github\\JTI\\TestCsv.csv')
+#C:\\Users\\Daniel.Mladenov\\github\\JTI\\
+checkIfWork.to_csv(r'TestCsv.csv')
 
 
 for ques in checkIfWork.columns:
