@@ -73,6 +73,8 @@ checkIfWork.to_csv(r'TestCsv.csv')
 # The check for the dublicated labels of categories in the same question
 for ques in checkIfWork.columns:
     series = pd.Series(checkIfWork[str(ques)].values)
+    #series = series.str.lower()
+    #series = series.str.replace(' ', '')
     series.replace('InproperLabel', np.nan, inplace=True)
     series = series.dropna()
     if len(series.index) > 2:
