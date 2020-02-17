@@ -37,13 +37,16 @@ def getLayoutForLabels(quesName, labelQuestion, language, xml):
                             combine = ""
                             for t in text.itertext():
                                 combine = combine + " " + t
-                            myLabel.append(cleanHtml(combine))
+                            myLabel = combine
                             totalyNeedlessFlag = True
 
-        if len(myQues) > 0 and len(myLabel) > 0:
-            tempDict = {myQues : myLabel}
-            finalDict.update(tempDict)
+
+        tempDict = {myQues : myLabel}
+        finalDict.update(tempDict)
 
     return finalDict
 
 labelFrame = getLayoutForLabels(quesName = "name", labelQuestion = 'label', language = 'en-US', xml = 'xml290120MDD.xml')
+#print(labelFrame)
+labelFrame = pd.DataFrame(labelFrame, index = [0])
+labelFrame.to_csv(r'Labels.csv')
