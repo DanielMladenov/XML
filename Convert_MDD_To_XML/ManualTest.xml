@@ -12,6 +12,18 @@
 					<value>2<text lang="en-US" mode="analysis">_2</text></value>
 				</categories>
 			</variable>
+			<variable ident="1" level="0">
+				<name>Q3</name>
+				<title>
+					<text lang="en-US" mode="analysis">Q3 NeshtoTukKoetoElejbylNaVyprosa</text>
+				</title>
+				<categories>
+					<value>1<text lang="en-US" mode="analysis">_1</text></value>
+					<value>2<text lang="en-US" mode="analysis">_2</text></value>
+					<value>3<text lang="en-US" mode="analysis">_3</text></value>
+					<value>4<text lang="en-US" mode="analysis">_4</text></value>
+				</categories>
+			</variable>
 		</columns>
 		<tables>
 			<variable ident="1" level="1">
@@ -31,6 +43,24 @@
 				<categories>
 					<value>4<text lang="en-US" mode="analysis">_4</text></value>
 					<value>5<text lang="en-US" mode="analysis">_5</text></value>
+				</categories>
+				</variable>
+			</variable>
+			<variable ident="1" level="1">
+				<name>Grid_Q4</name>
+				<title>
+					<text lang="en-US" mode="analysis">LejbalNaGrida</text>
+				</title>
+				<categories>
+					<value>1<text lang="en-US">_1</text></value>
+				</categories>
+				<variable ident="1" level="0">
+					<name>_scale</name>
+					<title>
+					</title>
+				<categories>
+					<value>1<text lang="en-US" mode="analysis">_1</text></value>
+					<value>2<text lang="en-US" mode="analysis">_2</text></value>
 				</categories>
 				</variable>
 			</variable>
