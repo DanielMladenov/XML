@@ -5,13 +5,35 @@
 			<variable ident="1" level="0">
 				<name>Q1</name>
 				<title>
-					<text xml:lang="en-US" mode="analysis">NeshtoTukKoetoElejbylNaVyprosa</text>
+					<text lang="en-US" mode="analysis">NeshtoTukKoetoElejbylNaVyprosa</text>
 				</title>
 				<categories>
-					<value>1<text xml:lang="en-US" mode="analysis">_1</text></value>
-					<value>2<text xml:lang="en-US" mode="analysis">_2</text></value>
+					<value>1<text lang="en-US" mode="analysis">_1</text></value>
+					<value>2<text lang="en-US" mode="analysis">_2</text></value>
 				</categories>
 			</variable>
 		</columns>
+		<tables>
+			<variable ident="1" level="1">
+				<name>Grid_Q2</name>
+				<title>
+					<text lang="en-US" mode="analysis">LejbalNaGrida</text>
+				</title>
+				<categories>
+					<value>1<text lang="en-US">_1</text></value>
+					<value>2<text lang="en-US">_2</text></value>
+					<value>3<text lang="en-US">_3</text></value>
+				</categories>
+				<variable ident="1" level="0">
+					<name>_scale</name>
+					<title>
+					</title>
+				<categories>
+					<value>4<text lang="en-US" mode="analysis">_4</text></value>
+					<value>5<text lang="en-US" mode="analysis">_5</text></value>
+				</categories>
+				</variable>
+			</variable>
+		</tables>
 	</questions>
 </mdm>
