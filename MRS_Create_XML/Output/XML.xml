@@ -2,5 +2,29 @@
 <mdm>
 <questions>
 <name>S15</name>
+<title>
+<text lang="ca-ES" mode="Question"></text>
+<text lang="en-US" mode="Question">Please record your gender</text>
+<text lang="th-TH" mode="Question"></text>
+<text lang="ur-PK" mode="Question"></text>
+<text lang="id-ID" mode="Question"></text>
+<text lang="fa-IR" mode="Question"></text>
+<text lang="vi-VN" mode="Question"></text>
+<text lang="xh" mode="Question"></text>
+<text lang="zu" mode="Question"></text>
+<text lang="hi-IN" mode="Question"></text>
+<text lang="ms-MY" mode="Question"></text>
+<text lang="sw-KE" mode="Question"></text>
+<text lang="bn" mode="Question"></text>
+<text lang="gu-IN" mode="Question"></text>
+<text lang="or" mode="Question"></text>
+<text lang="ta-IN" mode="Question"></text>
+<text lang="te-IN" mode="Question"></text>
+<text lang="kn-IN" mode="Question"></text>
+<text lang="ml" mode="Question"></text>
+<text lang="as" mode="Question"></text>
+<text lang="mr-IN" mode="Question"></text>
+<text lang="en-GB" mode="Question"></text>
+</title>
 </questions>
 </mdm>
