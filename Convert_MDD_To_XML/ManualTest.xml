@@ -8,8 +8,8 @@
 					<text lang="en-US" mode="analysis">NeshtoTukKoetoElejbylNaVyprosa</text>
 				</title>
 				<categories>
-					<value>1<text lang="en-US" mode="analysis">_1</text></value>
-					<value>2<text lang="en-US" mode="analysis">_2</text></value>
+					<value>_1<text lang="en-US" mode="analysis">Male</text></value>
+					<value>_2<text lang="en-US" mode="analysis">Female</text></value>
 				</categories>
 			</variable>
 			<variable ident="1" level="0">
@@ -26,7 +26,7 @@
 			</variable>
 		</columns>
 		<tables>
-			<variable ident="1" level="1">
+			<variable ident="1" level="1"> 
 				<name>Grid_Q2</name>
 				<title>
 					<text lang="en-US" mode="analysis">LejbalNaGrida</text>
