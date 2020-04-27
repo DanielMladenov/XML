@@ -2,7 +2,7 @@ import pandas as pd
 import xml.etree.ElementTree as ET
 import re
 
-tree = ET.parse('C:\\Users\\Daniel.Mladenov\\Documents\\GitHub\\XML\\Convert_MDD_To_XML\\ManualTest.xml')
+tree = ET.parse('C:\\Users\\Daniel.Mladenov\\Documents\\GitHub\\XML\\MRS_Create_XML\\Output\\XML.xml')
 root = tree.getroot()
 
 
