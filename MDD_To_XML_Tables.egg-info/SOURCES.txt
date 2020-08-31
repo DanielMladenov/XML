@@ -1,0 +1,8 @@
+setup.py
+NAME/__init__.py
+ShantavProekt.egg-info/PKG-INFO
+ShantavProekt.egg-info/SOURCES.txt
+ShantavProekt.egg-info/dependency_links.txt
+ShantavProekt.egg-info/requires.txt
+ShantavProekt.egg-info/top_level.txt
+bin/exm11.py
