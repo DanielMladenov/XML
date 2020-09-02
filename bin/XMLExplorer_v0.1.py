@@ -27,17 +27,19 @@ class xmlReader(object):
         #Based on the XML structure, the "Columns" cantain all of the flat questions.
         for flatQues in self.root.iter('columns'): 
             for ques in flatQues.iter(quesName):
-               self.getFlatQuestion(flatQues, value, labelName, language, title)
+               self.getFlatQuestion(flatQues, quesName, value, labelName, language, title)
             
 
 
 
-    def getFlatQuestion(self, oQues, value,labelName,language, title):
+    def getFlatQuestion(self, oQues, quesName, value,labelName,language, title):
         #print(oQues)
         for q in oQues:
             #print(q.attrib)
-            print(self.getLabelOfQuesCL(q, labelName, language, title))
-            self.getLevel(q)            
+            quesLabel = (self.getLabelOfQuesCL(q, labelName, language, title))
+            quesLevel = self.getLevel(q)            
+            #quesName
+            quesName = self.getNameCL(q, quesName)
             #for cat in q:
                 #print(cat.text)
             for Ccat in q.iter('categories'):
@@ -92,7 +94,10 @@ class xmlReader(object):
         return tempLabel
 
 
-        
+    def getNameCL(self, oQues, quesName):
+        for name in oQues.iter(quesName):
+            tempName = name.text
+        return tempName  
 
 
 
