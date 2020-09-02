@@ -33,20 +33,21 @@ class xmlReader(object):
 
 
     def getFlatQuestion(self, oQues, value,labelName,language):
-        print(oQues)
-        print(' 2')
+        #print(oQues)
         for q in oQues:
+            print(q.attrib)
+            self.getLevel(q)            
             #for cat in q:
                 #print(cat.text)
             for Ccat in q.iter('categories'):
                 print(self.getCatAtCurrentLevel(Ccat, labelName, language))
 
     def getCatAtCurrentLevel(self, oCat,labelName, language):
-        print(oCat)
+        #print(oCat)
         myCat = []
         myLabel = []
         for cat in oCat:
-            print(cat.text)
+            #print(cat.text)
             totalyNeedlessFlag = False
             myCat.append(cat.text)
             for label in cat.iter(labelName):
@@ -65,7 +66,10 @@ class xmlReader(object):
 
         return dict(zip(myCat, myLabel))
 
-        
+    def getLevel(self, oQues):
+        for key in oQues.attrib:
+                if key == 'level':
+                    print(oQues.attrib[key])
 
 
 
