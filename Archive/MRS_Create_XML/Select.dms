@@ -10,7 +10,7 @@ InputDatasource(Input)
     			Data Source=" + INPUT_DATASOURCE + ";_
     			Location=" + INPUT_CASEDATA + ";_
     			Initial Catalog=" + INPUT_MDD
-    SelectQuery = "SELECT S15,S20,S115 FROM HDATA"
+    SelectQuery = "SELECT S00a,S15,S20,SC7,S115 FROM HDATA"
 End InputDatasource
 
 OutputDatasource(Output)
