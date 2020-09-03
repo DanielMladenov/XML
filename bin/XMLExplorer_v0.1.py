@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import pandas as pd
 import re
-
+import nested_dict as nd
 
 def cleanHtml(row_string):
     if row_string:
@@ -38,12 +38,13 @@ class xmlReader(object):
             #print(q.attrib)
             quesLabel = (self.getLabelOfQuesCL(q, labelName, language, title))
             quesLevel = self.getLevel(q)            
-            #quesName
             quesName = self.getNameCL(q, quesName)
-            #for cat in q:
-                #print(cat.text)
+            #Geting Categories
             for Ccat in q.iter('categories'):
-                print(self.getCatAtCurrentLevel(Ccat, labelName, language))
+               quesCategories = self.getCatAtCurrentLevel(Ccat, labelName, language)
+
+
+        self.assembler(quesLevel, quesName, quesLabel, quesCategories)
 
     def getCatAtCurrentLevel(self, oCat,labelName, language):
         #print(oCat)
@@ -99,6 +100,20 @@ class xmlReader(object):
             tempName = name.text
         return tempName  
 
+
+    def assembler(self, quesLevel, quesName, quesLabel, quesCategories):
+
+        print(quesCategories)
+        
+        temp = {quesName : quesLabel }
+        
+        #new = {**temp, **quesCategories}
+        temp.update(quesCategories)
+
+        ret = {quesLevel : temp}
+
+        print(ret)
+        print(len(ret))
 
 
 xmlTest = xmlReader('../docs/XML.xml')
