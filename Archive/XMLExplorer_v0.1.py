@@ -25,43 +25,37 @@ class xmlReader(object):
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
         #Based on the XML structure, the "Columns" cantain all of the flat questions.
-        innerCounter = 1
-        ret = {}
         for flatQues in self.root.iter('columns'): 
-            for ques in flatQues.iter('variable'):                
-                temp = {'Ques_'+ str(innerCounter) : self.getFlatQuestion(ques, quesName, value, labelName, language, title)}
-                innerCounter = innerCounter + 1
-                ret.update(temp)
-                
-        #dict(zip(myCat, myLabel))
-        #update(self.getFlatQuestion(ques, quesName, value, labelName, language, title))
+            #for ques in flatQues.iter('variable'):
+            tempFlat = self.getFlatQuestion(flatQues, quesName, value, labelName, language, title)
+
 
             
-        #Based on the XML structure, the "Tables" cantain all of the Grid questions.
+        #Grids
         for gridQues in self.root.iter('tables'):
             pass
 
-        
-        return ret
+        return tempFlat
+
 
 
     def getGridQuestion(self, oQues, quesName, value, labelName, language, title):
         pass
 
-    #Tuka e problem
+
     def getFlatQuestion(self, oQues, quesName, value,labelName,language, title):
         #print(oQues)
-        #for q in oQues:
-            print(oQues)
-            TempLabel = self.getLabelOfQuesCL(oQues, labelName, language, title)
-            TempLevel = self.getLevel(oQues)            
-            TempName = self.getNameCL(oQues, quesName)
+        for q in oQues:
+            #print(q.attrib)
+            quesLabel = (self.getLabelOfQuesCL(q, labelName, language, title))
+            quesLevel = self.getLevel(q)            
+            quesName = self.getNameCL(q, quesName)
             #Geting Categories
-            for Ccat in oQues.iter('categories'):
-               TempCategories = self.getCatAtCurrentLevel(Ccat, labelName, language)
+            for Ccat in q.iter('categories'):
+               quesCategories = self.getCatAtCurrentLevel(Ccat, labelName, language)
 
-            #print(self.assembler(TempLevel, TempName, TempLabel, TempCategories))
-            return self.assembler(TempLevel, TempName, TempLabel, TempCategories)
+
+        return self.assembler(quesLevel, quesName, quesLabel, quesCategories)
 
     def getCatAtCurrentLevel(self, oCat,labelName, language):
         #print(oCat)
@@ -94,7 +88,7 @@ class xmlReader(object):
 
 
     def getLabelOfQuesCL(self, oQues, labelName, language,  title):
-        
+        print(oQues)
         for title in oQues.iter(title):
             totalyNeedlessFlag = False
             for label in title.iter(labelName):
@@ -113,22 +107,17 @@ class xmlReader(object):
 
 
     def getNameCL(self, oQues, quesName):
-        
         for name in oQues.iter(quesName):
-            retName = name.text   
-
-        
-        return retName
-        
+            tempName = name.text
+        return tempName  
 
 
     def assembler(self, quesLevel, quesName, quesLabel, quesCategories):
-        print(quesName)
+        
         temp = {quesName : quesLabel}
         temp.update(quesCategories)
 
         ret = {quesLevel : temp}
-
 
         return ret
 

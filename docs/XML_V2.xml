@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<mdm>
+<questions>
+<columns>
+<variable ident="3" level="0">
+<name>QPRMSHP</name>
+<title>
+<text lang="en-US" mode="Question">QPRMSHP</text><text lang="en-CA" mode="Question">Who in your household is primarily responsible for shopping for food and groceries?</text></title>
+<categories>
+<value other="no">_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Primarily you alone</text></value>
+<value other="no">_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">You and someone else equally</text></value>
+<value other="no">_3<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Primarily someone else</text></value>
+</categories>
+</variable>
+<variable ident="3" level="0">
+<name>QBUSP</name>
+<title>
+<text lang="en-US" mode="Question">QBUSP</text><text lang="en-CA" mode="Question">In the past 4 weeks, have you purchased groceries from any of the following companies? (Please select all that apply)</text></title>
+<categories>
+<value other="no">_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Co-Op</text></value>
+<value other="no">_11<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Costco</text></value>
+<value other="no">_24<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Dominion</text></value>
+<value other="no">_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Extra Foods</text></value>
+<value other="no">_12<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Food BASICS</text></value>
+<value other="no">_13<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Foodland</text></value>
+<value other="no">_14<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Fortino's</text></value>
+<value other="no">_20<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">FreshCo</text></value>
+<value other="no">_10000027<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">IGA</text></value>
+<value other="no">_37<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Loblaws/Loblaws Great Foods</text></value>
+<value other="no">_17<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Longos</text></value>
+<value other="no">_18<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Metro</text></value>
+<value other="no">_4<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">No Frills</text></value>
+<value other="no">_10000072<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Superstore / Real Canadian Superstore</text></value>
+<value other="no">_6<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Safeway</text></value>
+<value other="no">_7<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Save-On-Foods</text></value>
+<value other="no">_8<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Sobeys</text></value>
+<value other="no">_59<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Thrifty Foods</text></value>
+<value other="no">_21<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Valu Mart</text></value>
+<value other="no">_38<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Walmart/Walmart Supercentre</text></value>
+<value other="no">_22<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Your Independent Grocer</text></value>
+<value other="no">_23<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Zehrs</text></value>
+<value other="no">_45<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Whole Foods</text></value>
+<value other="no">_61<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Co-Op (Atlantic)</text></value>
+<value other="no">_51<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Farm Boy</text></value>
+<value other="no">_62<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Real Atlantic Superstore or Superstore</text></value>
+<value other="no">_42<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Shoppers Drug Mart</text></value>
+<value other="no">_160<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">IGA/IGA Extra</text></value>
+<value other="no">_161<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Metro/Metro Plus</text></value>
+<value other="no">_162<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Provigo/Provigo Le Marche</text></value>
+<value other="no">_163<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Maxi/Maxi Cie</text></value>
+<value other="no">_164<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">T&amp;T Supermarket</text></value>
+<value other="no">_99<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">None of the above</text></value>
+</categories>
+</variable>
+</columns>
+<tables>
+<variable ident="3" level="1">
+<name>LOOPVI</name>
+<title>
+<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question"></text></title>
+<categories>
+<value>_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Co-Op</text></value>
+<value>_11<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Costco</text></value>
+<value>_24<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Dominion</text></value>
+<value>_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Extra Foods</text></value>
+<value>_12<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Food BASICS</text></value>
+<value>_13<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Foodland</text></value>
+<value>_14<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Fortino's</text></value>
+<value>_20<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">FreshCo</text></value>
+<value>_10000027<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">IGA</text></value>
+<value>_37<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Loblaws/Loblaws Great Foods</text></value>
+<value>_17<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Longos</text></value>
+<value>_18<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Metro</text></value>
+<value>_4<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">No Frills</text></value>
+<value>_10000072<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Superstore / Real Canadian Superstore</text></value>
+<value>_6<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Safeway</text></value>
+<value>_7<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Save-On-Foods</text></value>
+<value>_8<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Sobeys</text></value>
+<value>_59<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Thrifty Foods</text></value>
+<value>_21<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Valu Mart</text></value>
+<value>_38<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Walmart/Walmart Supercentre</text></value>
+<value>_22<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Your Independent Grocer</text></value>
+<value>_23<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Zehrs</text></value>
+<value>_45<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Whole Foods</text></value>
+<value>_61<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Co-Op (Atlantic)</text></value>
+<value>_51<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Farm Boy</text></value>
+<value>_62<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Real Atlantic Superstore or Superstore</text></value>
+<value>_42<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Shoppers Drug Mart</text></value>
+<value>_160<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">IGA/IGA Extra</text></value>
+<value>_161<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Metro/Metro Plus</text></value>
+<value>_162<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Provigo/Provigo Le Marche</text></value>
+<value>_163<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Maxi/Maxi Cie</text></value>
+<value>_164<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">T&amp;T Supermarket</text></value>
+</categories>
+<variable ident="3" level="0">
+<name>QVI</name>
+<title>
+<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">How likely are you going to continue to spend money on food and grocery items at {@}?</text></title>
+<categories>
+<value other="no">_4<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Very likely</text></value>
+<value other="no">_3<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Somewhat likely</text></value>
+<value other="no">_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Not very likely</text></value>
+<value other="no">_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Not at all likely</text></value>
+</categories>
+</variable>
+</variable>
+</tables>
+</questions>
+</mdm>
