@@ -47,10 +47,19 @@ class xmlReader(object):
 
 
     def getGridQuestion(self, oQues, quesName, value, labelName, language, title):
-        print(oQues)
         TempLevel = self.getLevel(oQues)
         TempName = self.getNameCL(oQues, quesName)
         print(TempLevel + " - " + TempName)
+        print(type(TempLevel))
+        numberOfIteration = 0
+
+        if TempLevel == '0' or numberOfIteration > 5:
+            pass
+        else:
+            numberOfIteration = numberOfIteration + 1
+            for innerQues in oQues.findall('variable'):
+                self.getGridQuestion(innerQues, quesName, value, labelName, language, title)
+
 
     #Tuka e problem
     def getFlatQuestion(self, oQues, quesName, value,labelName,language, title):
