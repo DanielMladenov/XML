@@ -39,20 +39,24 @@ class xmlReader(object):
             
         #Based on the XML structure, the "Tables" cantain all of the Grid questions.
         for gridQues in self.root.iter('tables'):
-            pass
+            for ques in gridQues.findall('variable'):
+                self.getGridQuestion(ques, quesName, value, labelName, language, title)
 
         
         return ret
 
 
     def getGridQuestion(self, oQues, quesName, value, labelName, language, title):
-        pass
+        print(oQues)
+        TempLevel = self.getLevel(oQues)
+        TempName = self.getNameCL(oQues, quesName)
+        print(TempLevel + " - " + TempName)
 
     #Tuka e problem
     def getFlatQuestion(self, oQues, quesName, value,labelName,language, title):
         #print(oQues)
         #for q in oQues:
-            print(oQues)
+            #print(oQues)
             TempLabel = self.getLabelOfQuesCL(oQues, labelName, language, title)
             TempLevel = self.getLevel(oQues)            
             TempName = self.getNameCL(oQues, quesName)
@@ -114,7 +118,7 @@ class xmlReader(object):
 
     def getNameCL(self, oQues, quesName):
         
-        for name in oQues.iter(quesName):
+        for name in oQues.findall(quesName):
             retName = name.text   
 
         
@@ -123,7 +127,7 @@ class xmlReader(object):
 
 
     def assembler(self, quesLevel, quesName, quesLabel, quesCategories):
-        print(quesName)
+        #print(quesName)
         temp = {quesName : quesLabel}
         temp.update(quesCategories)
 
@@ -140,7 +144,7 @@ class xmlReader(object):
 
 xmlTest = xmlReader('../docs/XML_V2.xml')
 
-print(xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-CA"))
+#print(xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-CA"))
 
 
 #[[ 1 , 2],[2,6],[3,7]]

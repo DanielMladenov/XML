@@ -92,17 +92,17 @@
 <value>_163<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Maxi/Maxi Cie</text></value>
 <value>_164<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">T&amp;T Supermarket</text></value>
 </categories>
-<variable ident="3" level="0">
-<name>QVI</name>
-<title>
-<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">How likely are you going to continue to spend money on food and grocery items at {@}?</text></title>
-<categories>
-<value other="no">_4<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Very likely</text></value>
-<value other="no">_3<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Somewhat likely</text></value>
-<value other="no">_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Not very likely</text></value>
-<value other="no">_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Not at all likely</text></value>
-</categories>
-</variable>
+	<variable ident="3" level="0">
+	<name>QVI</name>
+	<title>
+	<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">How likely are you going to continue to spend money on food and grocery items at {@}?</text></title>
+	<categories>
+	<value other="no">_4<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Very likely</text></value>
+	<value other="no">_3<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Somewhat likely</text></value>
+	<value other="no">_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Not very likely</text></value>
+	<value other="no">_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Not at all likely</text></value>
+	</categories>
+	</variable>
 </variable>
 </tables>
 </questions>
