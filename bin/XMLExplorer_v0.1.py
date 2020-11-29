@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 import pandas as pd
 import re
-import nested_dict as nd
+
 
 def cleanHtml(row_string):
     if row_string:
@@ -32,6 +32,7 @@ class xmlReader(object):
                 temp = {'Ques_'+ str(innerCounter) : self.getFlatQuestion(ques, quesName, value, labelName, language, title)}
                 innerCounter = innerCounter + 1
                 ret.update(temp)
+                #print(temp)
                 
         #dict(zip(myCat, myLabel))
         #update(self.getFlatQuestion(ques, quesName, value, labelName, language, title))
@@ -40,28 +41,42 @@ class xmlReader(object):
         #Based on the XML structure, the "Tables" cantain all of the Grid questions.
         for gridQues in self.root.iter('tables'):
             for ques in gridQues.findall('variable'):
-                self.getGridQuestion(ques, quesName, value, labelName, language, title)
+                retDict = {} 
+                print(self.getGridQuestion(ques, quesName, value, labelName, language, title, retDict))
 
         
         return ret
 
 
-    def getGridQuestion(self, oQues, quesName, value, labelName, language, title):
+    def getGridQuestion(self, oQues, quesName, value, labelName, language, title, retDict):
         TempLevel = self.getLevel(oQues)
         TempName = self.getNameCL(oQues, quesName)
-        print(TempLevel + " - " + TempName)
-        print(type(TempLevel))
-        numberOfIteration = 0
+        #print(TempLevel + " - " + TempName)
+        #print(type(TempLevel))
+        
 
-        if TempLevel == '0' or numberOfIteration > 5:
-            pass
+        #Write the constuction 
+
+
+        # Check the level (loop or break)   / or numberOfIteration > 5
+        if TempLevel.strip() == '0' :
+            #print(retDict)
+            retDict.update(self.getFlatQuestion(oQues, quesName, value, labelName, language, title))
+            #print(retDict)
+            #return(retDict)
+
         else:
-            numberOfIteration = numberOfIteration + 1
+            #numberOfIteration = numberOfIteration + 1
+            retDict.update(self.getFlatQuestion(oQues, quesName, value, labelName, language, title))
+            #print(retDict)
             for innerQues in oQues.findall('variable'):
-                self.getGridQuestion(innerQues, quesName, value, labelName, language, title)
+                self.getGridQuestion(innerQues, quesName, value, labelName, language, title,retDict)
+
+       
+        return(retDict)
 
 
-    #Tuka e problem
+    
     def getFlatQuestion(self, oQues, quesName, value,labelName,language, title):
         #print(oQues)
         #for q in oQues:
