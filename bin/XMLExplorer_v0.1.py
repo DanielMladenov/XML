@@ -41,20 +41,20 @@ class xmlReader(object):
         #Based on the XML structure, the "Tables" cantain all of the Grid questions.
         for gridQues in self.root.iter('tables'):
             for ques in gridQues.findall('variable'):
-                retDict = {} 
-                print(self.getGridQuestion(ques, quesName, value, labelName, language, title, retDict))
-
-        
+                retDict = {}
+                #print(self.getGridQuestion(ques, quesName, value, labelName, language, title, retDict))
+                temp = {'Grid_' + str(innerCounter) : self.getGridQuestion(ques, quesName, value, labelName, language, title, retDict)}
+                ret.update(temp)
         return ret
 
 
     def getGridQuestion(self, oQues, quesName, value, labelName, language, title, retDict):
         TempLevel = self.getLevel(oQues)
         TempName = self.getNameCL(oQues, quesName)
-        #print(TempLevel + " - " + TempName)
+        print(TempLevel + " - " + TempName + " - " + str(oQues) + " - " + str(quesName))
         #print(type(TempLevel))
         
-
+        print(self.getFlatQuestion(oQues, quesName, value, labelName, language, title))
         #Write the constuction 
 
 
@@ -68,7 +68,8 @@ class xmlReader(object):
         else:
             #numberOfIteration = numberOfIteration + 1
             retDict.update(self.getFlatQuestion(oQues, quesName, value, labelName, language, title))
-            #print(retDict)
+            #print(self.getFlatQuestion(oQues, quesName, value, labelName, language, title))
+            #print(str(oQues))
             for innerQues in oQues.findall('variable'):
                 self.getGridQuestion(innerQues, quesName, value, labelName, language, title,retDict)
 
@@ -85,7 +86,7 @@ class xmlReader(object):
             TempLevel = self.getLevel(oQues)            
             TempName = self.getNameCL(oQues, quesName)
             #Geting Categories
-            for Ccat in oQues.iter('categories'):
+            for Ccat in oQues.findall('categories'):    # old version was oQues.iter('categories')
                TempCategories = self.getCatAtCurrentLevel(Ccat, labelName, language)
 
             #print(self.assembler(TempLevel, TempName, TempLabel, TempCategories))
