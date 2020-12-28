@@ -167,9 +167,11 @@ class xmlReader(object):
 
             ret = {quesLevel : temp}
         elif ident == '2':   # Text
-            ret = {quesLevel : 'Text'}
+            temp = {'Text' : {quesName : quesLabel}}
+            ret = {quesLevel : temp}
         elif ident == '1':   # Long
-            ret = {quesLevel : 'Long'}
+            temp = {'Long' : {quesName : quesLabel}}
+            ret = {quesLevel : temp}
         
         return ret
 
