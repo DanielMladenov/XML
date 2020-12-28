@@ -5,7 +5,7 @@
 <variable ident="3" level="0">
 <name>QPRMSHP</name>
 <title>
-<text lang="en-US" mode="Question">QPRMSHP</text><text lang="en-CA" mode="Question">Who in your household is primarily responsible for shopping for food and groceries?</text></title>
+<text lang="en-US" mode="Question">QPRMSHP</text><text lang="en-CA" mode="Question"> groceries?</text></title>
 <categories>
 <value other="no">_1<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">Primarily you alone</text></value>
 <value other="no">_2<text lang="en-US" mode="Question"></text><text lang="en-CA" mode="Question">You and someone else equally</text></value>

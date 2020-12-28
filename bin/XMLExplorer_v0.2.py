@@ -4,6 +4,7 @@ import pandas as pd
 import re
 
 
+
 def cleanHtml(row_string):
     if row_string:
         cleanr = re.compile('<.*?>')
@@ -18,9 +19,10 @@ class xmlReader(object):
     """docstring for xmlReader"""
     def __init__(self, path):
         #super(xmlReader, self).__init__()
+        parser = ET.XMLParser(encoding="iso-8859-5")
         self.path = path
-        self.tree = ET.parse(path)
-        self.root = self.tree.getroot()
+        self.tree = ET.parse(path, parser=parser)
+        self.root = self.tree.getroot() 
 
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
@@ -77,15 +79,20 @@ class xmlReader(object):
         #print(oQues)
         #for q in oQues:
             #print(oQues)
+            TempIdent = self.getType(oQues)
+            print(TempIdent)
             TempLabel = self.getLabelOfQuesCL(oQues, labelName, language, title)
             TempLevel = self.getLevel(oQues)            
             TempName = self.getNameCL(oQues, quesName)
             #Geting Categories
-            for Ccat in oQues.findall('categories'):    # old version was oQues.iter('categories')
-               TempCategories = self.getCatAtCurrentLevel(Ccat, labelName, language)
+            if TempIdent == '3':
+                for Ccat in oQues.findall('categories'):    # old version was oQues.iter('categories')
+                   TempCategories = self.getCatAtCurrentLevel(Ccat, labelName, language)
+            else:
+                TempCategories = {}    # No categories in the Text and Long questions
 
             #print(self.assembler(TempLevel, TempName, TempLabel, TempCategories))
-            return self.assembler(TempLevel, TempName, TempLabel, TempCategories)
+            return self.assembler(TempLevel, TempName, TempLabel, TempCategories, TempIdent)
 
     def getCatAtCurrentLevel(self, oCat,labelName, language):
         #print(oCat)
@@ -115,6 +122,12 @@ class xmlReader(object):
         for key in oQues.attrib:
                 if key == 'level':
                     return str(oQues.attrib[key])
+
+    def getType(self, oQues):
+        for ident in oQues.attrib:
+            if ident == 'ident':
+                return str(oQues.attrib[ident])
+        
 
 
     def getLabelOfQuesCL(self, oQues, labelName, language,  title):
@@ -146,14 +159,18 @@ class xmlReader(object):
         
 
 
-    def assembler(self, quesLevel, quesName, quesLabel, quesCategories):
+    def assembler(self, quesLevel, quesName, quesLabel, quesCategories, ident):
         #print(quesName)
-        temp = {quesName : quesLabel}
-        temp.update(quesCategories)
+        if ident == '3':
+            temp = {quesName : quesLabel}
+            temp.update(quesCategories)
 
-        ret = {quesLevel : temp}
-
-
+            ret = {quesLevel : temp}
+        elif ident == '2':   # Text
+            ret = {quesLevel : 'Text'}
+        elif ident == '1':   # Long
+            ret = {quesLevel : 'Long'}
+        
         return ret
 
 
@@ -162,7 +179,7 @@ class xmlReader(object):
 #=========================================================================================================
 #=========================================================================================================
 
-xmlTest = xmlReader('../docs/XML_V2.xml')
+xmlTest = xmlReader('../docs/XML_FC.xml')
 
 #print(xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-CA"))
 
@@ -170,7 +187,7 @@ xmlTest = xmlReader('../docs/XML_V2.xml')
 #[[ 1 , 2],[2,6],[3,7]]
 #{'_1' : {'1' : 'Gosho'}}
 #{'LOOPVI' : {1 : { '_1' : 'Co-Op', '_2' : 'Costco'}, 0 : {'_4' : 'Very likely', '_3' : 'Somewhat likely'} }}  !!!
-tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-CA")
+tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-US")
 testPD = pd.DataFrame(tempDic)
 
 testPD.to_csv(r'../docs/TestCsv.csv')
