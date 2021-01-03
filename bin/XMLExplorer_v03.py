@@ -5,15 +5,6 @@ import re
 
 
 
-def cleanHtml(row_string):
-    if row_string:
-        cleanr = re.compile('<.*?>')
-        cleantext = re.sub(cleanr, '', row_string)
-        return str(cleantext)
-    else:
-        return str('InproperLabel')
-
-
 
 class xmlReader(object):
     """docstring for xmlReader"""
@@ -23,6 +14,8 @@ class xmlReader(object):
         self.path = path
         self.tree = ET.parse(path, parser=parser)
         self.root = self.tree.getroot() 
+
+
 
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
@@ -49,6 +42,14 @@ class xmlReader(object):
                 ret.update(temp)
         return ret
 
+
+    def cleanHtml(self,row_string):
+        if row_string:
+            cleanr = re.compile('<.*?>')
+            cleantext = re.sub(cleanr, '', row_string)
+            return str(cleantext)
+        else:
+            return str('InproperLabel')
 
     def getGridQuestion(self, oQues, quesName, value, labelName, language, title, retDict):
         TempLevel = self.getLevel(oQues)
@@ -80,7 +81,7 @@ class xmlReader(object):
         #for q in oQues:
             #print(oQues)
             TempIdent = self.getType(oQues)
-            print(TempIdent)
+            #print(TempIdent)
             TempLabel = self.getLabelOfQuesCL(oQues, labelName, language, title)
             TempLevel = self.getLevel(oQues)            
             TempName = self.getNameCL(oQues, quesName)
@@ -112,7 +113,7 @@ class xmlReader(object):
                         combineLabel = ""
                         for t in label.itertext():
                             combineLabel = combineLabel + " " + t
-                        tempLabel = cleanHtml(combineLabel)
+                        tempLabel = self.cleanHtml(combineLabel)
                         myLabel.append(tempLabel)
                         totalyNeedlessFlag = True
 
@@ -143,7 +144,7 @@ class xmlReader(object):
                         combineLabel = ""
                         for t in label.itertext():
                             combineLabel = combineLabel + " " + t
-                        tempLabel = cleanHtml(combineLabel)
+                        tempLabel = self.cleanHtml(combineLabel)
                         totalyNeedlessFlag = True
 
         return tempLabel
@@ -181,26 +182,11 @@ class xmlReader(object):
 #=========================================================================================================
 #=========================================================================================================
 
-xmlTest = xmlReader('../docs/XML_FC.xml')
-
-#print(xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-CA"))
+#xmlTest = xmlReader('../docs/XML_FC.xml')
 
 
-#[[ 1 , 2],[2,6],[3,7]]
-#{'_1' : {'1' : 'Gosho'}}
-#{'LOOPVI' : {1 : { '_1' : 'Co-Op', '_2' : 'Costco'}, 0 : {'_4' : 'Very likely', '_3' : 'Somewhat likely'} }}  !!!
-tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-US")
-testPD = pd.DataFrame(tempDic)
+#tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-US")
+#testPD = pd.DataFrame(tempDic)
 
-testPD.to_csv(r'../docs/TestCsv.csv')
-
-#print(testPD)
-
-#C:\\Users\\Daniel.Mladenov\\github\\JTI\\
-#checkIfWork = getLayout(quesName = "name", value = "value", labelName = "text", xml = '../docs/XML.xml', language = "en-CA")
-#checkIfWork = pd.DataFrame(checkIfWork)
-
-#checkIfWork.to_csv(r'../docs/TestCsv.csv')
-
-# The check for the dublicated labels of categories in the same question
+#testPD.to_csv(r'../docs/TestCsv.csv')
 
