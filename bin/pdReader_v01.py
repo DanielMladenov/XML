@@ -56,7 +56,23 @@ class arrayBuilderMDD(object):
 			return int(ret)
 
 	def writeCatNum(self):
-		pass
+		temp = self.testttt(self.ar)
+		#print(temp)
+
+	def getInnerDic(self, ar):
+		try:
+			for key, val in ar.items():
+				for t in val.values():
+					print(t)
+			#for key in ar.vlues():
+				#self.getInnerDic(key)
+		except:
+			return ar
+
+	def testttt(self, ar):
+		for i in range(len(ar)):
+			if ar[i].__class__.__name__ == 'dict' or ar[i].__class__.__name__ == 'list' or ar[i].__class__.__name__ == 'tuple':
+				print(ar[i])
 
 	def writeArr(self):
 		ret = []
@@ -65,6 +81,7 @@ class arrayBuilderMDD(object):
 
 			ret.append(self.writeLevel(ar))
 			ret.append(self.writeType())
+			self.writeCatNum()
 			#print(ret)
 			return ret
 		
@@ -79,9 +96,8 @@ for (columnName, columnData) in testPD.iteritems():
 		#tes.writeLevel(cc)
 		#tes.writeType()
 		check = tes.writeArr()
-		print(check)
-		if pd.isna(cc[1]) == False:
-			pass
+		#print(check)
+		
 
 
 
