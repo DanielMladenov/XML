@@ -16,10 +16,27 @@ testPD.to_csv(r'../docs/TestCsv.csv')
 
 class arrayBuilderMDD(object):
 	"""docstring for arrayBuilderMDD"""
+
+	class categories:
+
+		def __init__(self, innAr):
+			self.innAr = innAr
+
+		def count(self):
+			for i in range(len(self.innAr)):
+				if self.innAr[i].__class__.__name__ == 'dict' or self.innAr[i].__class__.__name__ == 'list' or self.innAr[i].__class__.__name__ == 'tuple':
+					
+					return len(self.innAr[i])-1
+
+
 	def __init__(self, ar, possition):
 		self.ar = ar
 		self.possition = possition
 		self.valid = self.checkValid()
+		self.type = self.writeType()
+
+	def __call__(self):
+		pass
 
 	def checkValid(self):
 		if pd.isna(self.ar[1]) == True:
@@ -55,11 +72,12 @@ class arrayBuilderMDD(object):
 
 			return int(ret)
 
+	
 	def writeCatNum(self):
 		temp = self.testttt(self.ar)
 		#print(temp)
 
-	def getInnerDic(self, ar):
+	def getInnerDic(self, ar):	#This is not in use at the moment 
 		try:
 			for key, val in ar.items():
 				for t in val.values():
@@ -70,19 +88,30 @@ class arrayBuilderMDD(object):
 			return ar
 
 	def testttt(self, ar):
-		for i in range(len(ar)):
-			if ar[i].__class__.__name__ == 'dict' or ar[i].__class__.__name__ == 'list' or ar[i].__class__.__name__ == 'tuple':
-				print(ar[i])
+			for i in range(len(ar)):
+				if ar[i].__class__.__name__ == 'dict' or ar[i].__class__.__name__ == 'list' or ar[i].__class__.__name__ == 'tuple':
+					print(ar[i])
+					#self.testttt(ar[i])
+					
 
-	def writeArr(self):
+				#else:
+					#print(ar[i])
+					#return ar[i]	
+
+
+	def writeArr(self):			#This is mainFunction to Write the array
 		ret = []
-		if self.valid:
+		if self.valid and self.type == 3:
 			ar = self.ar
 
 			ret.append(self.writeLevel(ar))
 			ret.append(self.writeType())
-			self.writeCatNum()
-			#print(ret)
+			#self.writeCatNum()
+			ret.append(self.categories(ar).count())
+			#print(self.categories(ar).count())
+			
+
+			print(ret)
 			return ret
 		
 
