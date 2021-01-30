@@ -9,7 +9,7 @@ xmlTest = xmlReader('../docs/XML_FC.xml')
 tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-US")
 testPD = pd.DataFrame(tempDic)
 #Write the CSV file
-testPD.to_csv(r'../docs/TestCsv.csv')
+testPD.to_csv(r'..\docs\TestCsv.csv')
 
 #===================================Seting new function==================================================
 
@@ -51,6 +51,7 @@ class arrayBuilderMDD(object):
 
 	def writeLevel(self, ar):
 		ret = 0
+		#print(ar[0])
 		if pd.isna(ar[1]) == False:
 			ret = int(ar[0]) - 1
 			if ret < 0:
@@ -106,12 +107,12 @@ class arrayBuilderMDD(object):
 
 			ret.append(self.writeLevel(ar))
 			ret.append(self.writeType())
-			#self.writeCatNum()
 			ret.append(self.categories(ar).count())
 			#print(self.categories(ar).count())
 			
 
-			print(ret)
+			#print(ar)
+			#print(ret)
 			return ret
 		
 

@@ -174,6 +174,7 @@ class xmlReader(object):
             temp = {'Long' : {quesName : quesLabel}}
             ret = {quesLevel : temp}
         
+        print(ret)
         return ret
 
 
