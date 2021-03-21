@@ -11,6 +11,9 @@ testPD = pd.DataFrame(tempDic)
 #Write the CSV file
 testPD.to_csv(r'..\docs\TestCsv.csv')
 
+
+
+
 #===================================Seting new function==================================================
 
 
@@ -27,7 +30,10 @@ class arrayBuilderMDD(object):
 				if self.innAr[i].__class__.__name__ == 'dict' or self.innAr[i].__class__.__name__ == 'list' or self.innAr[i].__class__.__name__ == 'tuple':
 					
 					return len(self.innAr[i])-1
-
+		def mlLabel(self):	#This will export the label into csv file in order to be "labeled" for set of ML purposes 
+			for i in range(len(self.innAr)):
+				if self.innAr[i].__class__.__name__ == 'dict' or self.innAr[i].__class__.__name__ == 'list' or self.innAr[i].__class__.__name__ == 'tuple':
+					print(self.innAr[i])
 
 	def __init__(self, ar, possition):
 		self.ar = ar
@@ -73,33 +79,19 @@ class arrayBuilderMDD(object):
 
 			return int(ret)
 
-	
-	def writeCatNum(self):
-		temp = self.testttt(self.ar)
-		#print(temp)
 
 	def getInnerDic(self, ar):	#This is not in use at the moment 
 		try:
 			for key, val in ar.items():
 				for t in val.values():
-					print(t)
+					#print(t)
+					pass
 			#for key in ar.vlues():
 				#self.getInnerDic(key)
 		except:
 			return ar
 
-	def testttt(self, ar):
-			for i in range(len(ar)):
-				if ar[i].__class__.__name__ == 'dict' or ar[i].__class__.__name__ == 'list' or ar[i].__class__.__name__ == 'tuple':
-					print(ar[i])
-					#self.testttt(ar[i])
-					
-
-				#else:
-					#print(ar[i])
-					#return ar[i]	
-
-
+	
 	def writeArr(self):			#This is mainFunction to Write the array
 		ret = []
 		if self.valid and self.type == 3:
@@ -116,6 +108,9 @@ class arrayBuilderMDD(object):
 			return ret
 		
 
+#Exporting 
+
+
 ##========================= 	TESTING ========================================
 for (columnName, columnData) in testPD.iteritems():
 	#print(columnData)
@@ -127,6 +122,8 @@ for (columnName, columnData) in testPD.iteritems():
 		#tes.writeType()
 		check = tes.writeArr()
 		#print(check)
+	# Test the "ML" setup
+
 		
 
 

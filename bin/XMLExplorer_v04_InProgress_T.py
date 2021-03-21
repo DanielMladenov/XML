@@ -14,8 +14,19 @@ class xmlReader(object):
         self.path = path
         self.tree = ET.parse(path, parser=parser)
         self.root = self.tree.getroot() 
+        self.mlMode = self.mlMode()
 
 
+    class mlMode(object):
+        """ML mode / getting export for learning"""
+        def __init__(self):
+           pass
+
+       # def mlLabels(self):
+           # for flatQues in root.iter('columns'): 
+             #  pass
+                #for ques in flatQues.iter('variable'):
+                    #print(self.getLabelOfQuesCL(oQues, labelName, language, title))
 
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
@@ -174,16 +185,18 @@ class xmlReader(object):
             temp = {'Long' : {quesName : quesLabel}}
             ret = {quesLevel : temp}
         
-        #print(ret)
+        print(ret)
         return ret
 
-
-
+   
 #=========================================================================================================
 #=========================================================================================================
 #=========================================================================================================
 
-#xmlTest = xmlReader('../docs/XML_FC.xml')
+xmlTest = xmlReader('../docs/XML_FC.xml')
+#xmlReader('../docs/XML_FC.xml').mlMode().mlLabels()
+
+
 
 
 #tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-US")
