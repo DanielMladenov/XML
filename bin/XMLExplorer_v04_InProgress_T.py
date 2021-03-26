@@ -14,20 +14,36 @@ class xmlReader(object):
         self.path = path
         self.tree = ET.parse(path, parser=parser)
         self.root = self.tree.getroot() 
-        self.mlMode = self.mlMode()
+       
+
+
+    def get_inner_object(self):
+        return self.mlMode(self)
 
 
     class mlMode(object):
         """ML mode / getting export for learning"""
-        def __init__(self):
-           pass
+        def __init__(self, xmlReader):
+            self.xmlReader = xmlReader
+            self.root = self.xmlReader.root
 
-       # def mlLabels(self):
-           # for flatQues in root.iter('columns'): 
-             #  pass
-                #for ques in flatQues.iter('variable'):
-                    #print(self.getLabelOfQuesCL(oQues, labelName, language, title))
 
+        def mlLabels(self):
+            ret = {}
+            for flatQues in self.root.iter('columns'): 
+               #print(flatQues)
+                for ques in flatQues.iter('variable'):
+                    #print(self.xmlReader.getCatAtCurrentLevel(ques, "text", "en-US", 'title'))
+                    TempIdent = self.xmlReader.getType(ques)
+                    if TempIdent == '3':
+                        for Ccat in ques.findall('categories'):    # old version was oQues.iter('categories')
+                            TempCategories = self.xmlReader.getCatAtCurrentLevel(Ccat, "text", "en-US")
+                            ret.update(TempCategories)
+                    else:
+                        TempCategories = {}
+
+                        
+            return ret
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
         #Based on the XML structure, the "Columns" cantain all of the flat questions.
@@ -194,10 +210,14 @@ class xmlReader(object):
 #=========================================================================================================
 
 xmlTest = xmlReader('../docs/XML_FC.xml')
-#xmlReader('../docs/XML_FC.xml').mlMode().mlLabels()
+ml = xmlTest.get_inner_object()
+
+testPD = pd.Series(ml.mlLabels())
+
+testPD.to_csv(r'../docs/mlLab.csv')
 
 
-
+#xmlTest.mlMode(xmlTest).mlLabels()
 
 #tempDic = xmlTest.getLayout(quesName = 'name', value = "value", labelName = "text", language = "en-US")
 #testPD = pd.DataFrame(tempDic)
