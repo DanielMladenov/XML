@@ -29,7 +29,7 @@ class xmlReader(object):
 
 
         def mlLabels(self):
-            ret = {}
+            ret = []
             for flatQues in self.root.iter('columns'): 
                #print(flatQues)
                 for ques in flatQues.iter('variable'):
@@ -37,10 +37,9 @@ class xmlReader(object):
                     TempIdent = self.xmlReader.getType(ques)
                     if TempIdent == '3':
                         for Ccat in ques.findall('categories'):    # old version was oQues.iter('categories')
-                            TempCategories = self.xmlReader.getCatAtCurrentLevel(Ccat, "text", "en-US")
-                            ret.update(TempCategories)
-                    else:
-                        TempCategories = {}
+                            TempCategories = self.xmlReader.getLabelatCurrentLevel(Ccat, "text", "en-US")
+                            ret.append(TempCategories)
+                    
 
                         
             return ret
@@ -121,6 +120,29 @@ class xmlReader(object):
 
             #print(self.assembler(TempLevel, TempName, TempLabel, TempCategories))
             return self.assembler(TempLevel, TempName, TempLabel, TempCategories, TempIdent)
+
+    def getLabelatCurrentLevel(self, oCat, labelName, language):
+        myCat = []
+        myLabel = []
+        for cat in oCat:
+            #print(cat.text)
+            totalyNeedlessFlag = False
+            myCat.append(cat.text)
+            for label in cat.iter(labelName):
+                if totalyNeedlessFlag:
+                    break             
+                myTempVal = label.attrib.values()
+                for key in myTempVal:
+                    if key == language:
+                        #print(label.text)
+                        combineLabel = ""
+                        for t in label.itertext():
+                            combineLabel = combineLabel + " " + t
+                        tempLabel = self.cleanHtml(combineLabel)
+                        myLabel.append(tempLabel)
+                        totalyNeedlessFlag = True
+
+        return myLabel
 
     def getCatAtCurrentLevel(self, oCat,labelName, language):
         #print(oCat)
@@ -209,12 +231,12 @@ class xmlReader(object):
 #=========================================================================================================
 #=========================================================================================================
 
-xmlTest = xmlReader('../docs/XML_FC.xml')
+xmlTest = xmlReader('../docs/XML_BNP.xml')
 ml = xmlTest.get_inner_object()
 
-testPD = pd.Series(ml.mlLabels())
-
-testPD.to_csv(r'../docs/mlLab.csv')
+testPD = (ml.mlLabels())
+print(testPD)
+#testPD.to_csv(r'../docs/mlLab_BNP.csv')
 
 
 #xmlTest.mlMode(xmlTest).mlLabels()
