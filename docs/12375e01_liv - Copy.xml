@@ -1,0 +1,2501 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?meta name="GENERATOR" content="XML::Smart/1.6.9 Perl/5.008008 [linux]" ?>
+<sss version="2.0">
+  <date>15/02/2022</date>
+  <time>15:47</time>
+  <origin>qcsss 3.1, Ipsos Observer France</origin>
+  <user>wainfo</user>
+  <survey>
+    <record ident="A" format="fixed">
+      <variable ident="1" type="quantity" use="serial">
+        <name>qcpser</name>
+        <label>qcpser - Data Serial Number</label>
+        <position start="1" finish="5"/>
+        <values>
+          <range from="0" to="99999"/>
+        </values>
+      </variable>
+      <variable ident="2" type="single">
+        <name>comp</name>
+        <label>comp - 1 SI REALISE</label>
+        <position start="6" finish="6"/>
+        <values>
+          <value code="1">REALISE</value>
+        </values>
+      </variable>
+      <variable ident="3" type="character">
+        <name>fstate</name>
+        <label>fstate</label>
+        <position start="7" finish="8"/>
+        <size>2</size>
+      </variable>
+      <variable ident="4" type="quantity">
+        <name>fsample</name>
+        <label>fsample - market - quota adresse principal</label>
+        <position start="9" finish="11"/>
+        <values>
+          <range from="0" to="999"/>
+        </values>
+      </variable>
+      <variable ident="5" type="single">
+        <name>qesc</name>
+        <label>qesc - STOP INTER</label>
+        <position start="12" finish="13"/>
+        <values>
+          <value code="1">stop inter 1</value>
+          <value code="2">stop inter 2</value>
+          <value code="3">stop inter 3</value>
+          <value code="4">stop inter 4</value>
+          <value code="5">stop inter 5</value>
+          <value code="6">stop inter 6</value>
+          <value code="7">stop inter 7</value>
+          <value code="8">stop inter 8</value>
+          <value code="9">stop inter 9</value>
+        </values>
+      </variable>
+      <variable ident="6" type="quantity">
+        <name>serial</name>
+        <label>serial - Numéro de contact/inter original</label>
+        <position start="14" finish="18"/>
+        <values>
+          <range from="0" to="99999"/>
+        </values>
+      </variable>
+      <variable ident="7" type="quantity">
+        <name>qenq</name>
+        <label>qenq - Numéro d'enquêteur</label>
+        <position start="19" finish="23"/>
+        <values>
+          <range from="0" to="99999"/>
+        </values>
+      </variable>
+      <variable ident="8" type="single">
+        <name>version</name>
+        <label>version - Version</label>
+        <position start="24" finish="24"/>
+        <values>
+          <value code="1">version 1</value>
+          <value code="2">version 2</value>
+        </values>
+      </variable>
+      <variable ident="9" type="quantity">
+        <name>datum</name>
+        <label>datum - DATE DEBUT INTER AAAAMMDD</label>
+        <position start="25" finish="32"/>
+        <values>
+          <range from="0" to="99999999"/>
+        </values>
+      </variable>
+      <variable ident="10" type="quantity">
+        <name>timsta</name>
+        <label>timsta - DEBUT SECTION SCRIPT CTC HHMMSS</label>
+        <position start="33" finish="38"/>
+        <values>
+          <range from="0" to="999999"/>
+        </values>
+      </variable>
+      <variable ident="11" type="quantity">
+        <name>timqre</name>
+        <label>timqre - DEBUT SECTION SCRIPT QRE HHMMSS</label>
+        <position start="39" finish="44"/>
+        <values>
+          <range from="0" to="999999"/>
+        </values>
+      </variable>
+      <variable ident="12" type="quantity">
+        <name>timend</name>
+        <label>timend - FIN SECTION SCRIPT QRE HHMMSS</label>
+        <position start="45" finish="50"/>
+        <values>
+          <range from="0" to="999999"/>
+        </values>
+      </variable>
+      <variable ident="13" type="character">
+        <name>name</name>
+        <label>name</label>
+        <position start="51" finish="60"/>
+        <size>10</size>
+      </variable>
+      <variable ident="14" type="character">
+        <name>logname</name>
+        <label>logname</label>
+        <position start="61" finish="68"/>
+        <size>8</size>
+      </variable>
+      <variable ident="15" type="character">
+        <name>etude</name>
+        <label>etude</label>
+        <position start="69" finish="76"/>
+        <size>8</size>
+      </variable>
+      <variable ident="16" type="character">
+        <name>recqre</name>
+        <label>recqre</label>
+        <position start="77" finish="77"/>
+        <size>1</size>
+      </variable>
+      <variable ident="17" type="quantity">
+        <name>top_1</name>
+        <label>top_1 - ...§TOP 1</label>
+        <position start="78" finish="81"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="18" type="quantity">
+        <name>top_2</name>
+        <label>top_2 - ...§TOP 2</label>
+        <position start="82" finish="85"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="19" type="quantity">
+        <name>top_3</name>
+        <label>top_3 - ...§TOP 3</label>
+        <position start="86" finish="89"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="20" type="quantity">
+        <name>top_4</name>
+        <label>top_4 - ...§TOP 4</label>
+        <position start="90" finish="93"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="21" type="quantity">
+        <name>top_5</name>
+        <label>top_5 - ...§TOP 5</label>
+        <position start="94" finish="97"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="22" type="quantity">
+        <name>top_6</name>
+        <label>top_6 - ...§TOP 6</label>
+        <position start="98" finish="101"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="23" type="quantity">
+        <name>top_7</name>
+        <label>top_7 - ...§TOP 7</label>
+        <position start="102" finish="105"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="24" type="quantity">
+        <name>top_8</name>
+        <label>top_8 - ...§TOP 8</label>
+        <position start="106" finish="109"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="25" type="quantity">
+        <name>top_9</name>
+        <label>top_9 - ...§TOP 9</label>
+        <position start="110" finish="113"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="26" type="quantity">
+        <name>top_10</name>
+        <label>top_10 - ...§</label>
+        <position start="114" finish="117"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="27" type="quantity">
+        <name>top_11</name>
+        <label>top_11 - ...§</label>
+        <position start="118" finish="121"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="28" type="quantity">
+        <name>top_12</name>
+        <label>top_12 - ...§</label>
+        <position start="122" finish="125"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="29" type="quantity">
+        <name>top_13</name>
+        <label>top_13 - ...§</label>
+        <position start="126" finish="129"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="30" type="quantity">
+        <name>top_14</name>
+        <label>top_14 - ...§</label>
+        <position start="130" finish="133"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="31" type="quantity">
+        <name>top_15</name>
+        <label>top_15 - ...§</label>
+        <position start="134" finish="137"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="32" type="quantity">
+        <name>top_16</name>
+        <label>top_16 - ...§</label>
+        <position start="138" finish="141"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="33" type="quantity">
+        <name>top_17</name>
+        <label>top_17 - ...§</label>
+        <position start="142" finish="145"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="34" type="quantity">
+        <name>top_18</name>
+        <label>top_18 - ...§</label>
+        <position start="146" finish="149"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="35" type="quantity">
+        <name>top_19</name>
+        <label>top_19 - ...§</label>
+        <position start="150" finish="153"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="36" type="quantity">
+        <name>top_20</name>
+        <label>top_20 - ...§</label>
+        <position start="154" finish="157"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="37" type="quantity">
+        <name>top_21</name>
+        <label>top_21 - ...§</label>
+        <position start="158" finish="161"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="38" type="quantity">
+        <name>top_22</name>
+        <label>top_22 - ...§</label>
+        <position start="162" finish="165"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="39" type="quantity">
+        <name>top_23</name>
+        <label>top_23 - ...§</label>
+        <position start="166" finish="169"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="40" type="quantity">
+        <name>top_24</name>
+        <label>top_24 - ...§</label>
+        <position start="170" finish="173"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="41" type="quantity">
+        <name>top_25</name>
+        <label>top_25 - ...§</label>
+        <position start="174" finish="177"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="42" type="quantity">
+        <name>top_26</name>
+        <label>top_26 - ...§</label>
+        <position start="178" finish="181"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="43" type="quantity">
+        <name>top_27</name>
+        <label>top_27 - ...§</label>
+        <position start="182" finish="185"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="44" type="quantity">
+        <name>top_28</name>
+        <label>top_28 - ...§</label>
+        <position start="186" finish="189"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="45" type="quantity">
+        <name>top_29</name>
+        <label>top_29 - ...§</label>
+        <position start="190" finish="193"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="46" type="quantity">
+        <name>top_30</name>
+        <label>top_30 - ...§</label>
+        <position start="194" finish="197"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="47" type="quantity">
+        <name>top_31</name>
+        <label>top_31 - ...§</label>
+        <position start="198" finish="201"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="48" type="quantity">
+        <name>top_32</name>
+        <label>top_32 - ...§</label>
+        <position start="202" finish="205"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="49" type="quantity">
+        <name>top_33</name>
+        <label>top_33 - ...§</label>
+        <position start="206" finish="209"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="50" type="quantity">
+        <name>top_34</name>
+        <label>top_34 - ...§</label>
+        <position start="210" finish="213"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="51" type="quantity">
+        <name>top_35</name>
+        <label>top_35 - ...§</label>
+        <position start="214" finish="217"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="52" type="quantity">
+        <name>top_36</name>
+        <label>top_36 - ...§</label>
+        <position start="218" finish="221"/>
+        <values>
+          <range from="0" to="9999"/>
+        </values>
+      </variable>
+      <variable ident="53" type="character">
+        <name>skey</name>
+        <label>skey</label>
+        <position start="222" finish="241"/>
+        <size>20</size>
+      </variable>
+      <variable ident="54" type="character">
+        <name>stel</name>
+        <label>stel</label>
+        <position start="242" finish="261"/>
+        <size>20</size>
+      </variable>
+      <variable ident="55" type="character">
+        <name>ftel2</name>
+        <label>ftel2</label>
+        <position start="262" finish="271"/>
+        <size>10</size>
+      </variable>
+      <variable ident="56" type="character">
+        <name>ftel1</name>
+        <label>ftel1</label>
+        <position start="272" finish="281"/>
+        <size>10</size>
+      </variable>
+      <variable ident="57" type="character">
+        <name>fnom</name>
+        <label>fnom</label>
+        <position start="282" finish="331"/>
+        <size>50</size>
+      </variable>
+      <variable ident="58" type="character">
+        <name>fprenom</name>
+        <label>fprenom</label>
+        <position start="332" finish="371"/>
+        <size>40</size>
+      </variable>
+      <variable ident="59" type="quantity">
+        <name>fcp</name>
+        <label>fcp - cp</label>
+        <position start="372" finish="376"/>
+        <values>
+          <range from="0" to="99999"/>
+        </values>
+      </variable>
+      <variable ident="60" type="character">
+        <name>fville</name>
+        <label>fville</label>
+        <position start="377" finish="426"/>
+        <size>50</size>
+      </variable>
+      <variable ident="61" type="quantity">
+        <name>fdpt</name>
+        <label>fdpt - dpt</label>
+        <position start="427" finish="428"/>
+        <values>
+          <range from="0" to="99"/>
+        </values>
+      </variable>
+      <variable ident="62" type="quantity">
+        <name>fnbtel</name>
+        <label>fnbtel - nbtel</label>
+        <position start="429" finish="429"/>
+        <values>
+          <range from="0" to="9"/>
+        </values>
+      </variable>
+      <variable ident="63" type="single">
+        <name>fage</name>
+        <label>fage - age</label>
+        <position start="430" finish="430"/>
+        <values>
+          <value code="1">25-30 ans</value>
+          <value code="2">31-35 ans</value>
+          <value code="3">36-40 ans</value>
+          <value code="4">41-45 ans </value>
+          <value code="5">46-50 ans</value>
+          <value code="6">51-55 ans </value>
+          <value code="7">&gt; 55 ans</value>
+        </values>
+      </variable>
+      <variable ident="64" type="single">
+        <name>fcredit</name>
+        <label>fcredit - credit</label>
+        <position start="431" finish="431"/>
+        <values>
+          <value code="1">Avec Crédit</value>
+          <value code="2">Sans Crédit</value>
+        </values>
+      </variable>
+      <variable ident="65" type="single">
+        <name>fcible</name>
+        <label>fcible - CIBLE</label>
+        <position start="432" finish="433"/>
+        <values>
+          <value code="1">1</value>
+          <value code="2">2</value>
+          <value code="3">3</value>
+          <value code="4">4</value>
+          <value code="5">5</value>
+          <value code="6">6</value>
+          <value code="7">7</value>
+          <value code="8">8</value>
+          <value code="9">9</value>
+          <value code="10">10</value>
+          <value code="11">11</value>
+          <value code="12">12</value>
+          <value code="13">13</value>
+          <value code="14">14</value>
+        </values>
+      </variable>
+      <variable ident="66" type="single">
+        <name>fcaisse</name>
+        <label>fcaisse - CAISSE</label>
+        <position start="434" finish="434"/>
+        <values>
+          <value code="1">Des Savoie</value>
+          <value code="2">De Franche Comté</value>
+          <value code="3">Centre Est</value>
+          <value code="4">Alsace Vosges</value>
+          <value code="5">GTE</value>
+        </values>
+      </variable>
+      <variable ident="67" type="single">
+        <name>fdep</name>
+        <label>fdep - dep</label>
+        <position start="435" finish="436"/>
+        <values>
+          <value code="1">1</value>
+          <value code="2">2</value>
+          <value code="3">3</value>
+          <value code="4">4</value>
+          <value code="5">5</value>
+          <value code="6">6</value>
+          <value code="7">7</value>
+          <value code="8">8</value>
+          <value code="9">9</value>
+          <value code="10">10</value>
+          <value code="11">11</value>
+          <value code="12">12</value>
+          <value code="13">13</value>
+          <value code="14">14</value>
+          <value code="15">15</value>
+          <value code="16">16</value>
+          <value code="17">17</value>
+          <value code="18">18</value>
+          <value code="19">19</value>
+          <value code="20">20</value>
+          <value code="21">21</value>
+          <value code="22">22</value>
+          <value code="23">23</value>
+          <value code="24">24</value>
+          <value code="25">25</value>
+          <value code="26">26</value>
+          <value code="27">27</value>
+          <value code="28">28</value>
+          <value code="29">29</value>
+          <value code="30">30</value>
+          <value code="31">31</value>
+          <value code="32">32</value>
+          <value code="33">33</value>
+          <value code="34">34</value>
+          <value code="35">35</value>
+          <value code="36">36</value>
+          <value code="37">37</value>
+          <value code="38">38</value>
+          <value code="39">39</value>
+          <value code="40">40</value>
+          <value code="41">41</value>
+          <value code="42">42</value>
+          <value code="43">43</value>
+          <value code="44">44</value>
+          <value code="45">45</value>
+          <value code="46">46</value>
+          <value code="47">47</value>
+          <value code="48">48</value>
+          <value code="49">49</value>
+          <value code="50">50</value>
+          <value code="51">51</value>
+          <value code="52">52</value>
+          <value code="53">53</value>
+          <value code="54">54</value>
+          <value code="55">55</value>
+          <value code="56">56</value>
+          <value code="57">57</value>
+          <value code="58">58</value>
+          <value code="59">59</value>
+          <value code="60">60</value>
+          <value code="61">61</value>
+          <value code="62">62</value>
+          <value code="63">63</value>
+          <value code="64">64</value>
+          <value code="65">65</value>
+          <value code="66">66</value>
+          <value code="67">67</value>
+          <value code="68">68</value>
+          <value code="69">69</value>
+          <value code="70">70</value>
+          <value code="71">71</value>
+          <value code="72">72</value>
+          <value code="73">73</value>
+          <value code="74">74</value>
+          <value code="75">75</value>
+          <value code="76">76</value>
+          <value code="77">77</value>
+          <value code="78">78</value>
+          <value code="79">79</value>
+          <value code="80">80</value>
+          <value code="81">81</value>
+          <value code="82">82</value>
+          <value code="83">83</value>
+          <value code="84">84</value>
+          <value code="85">85</value>
+          <value code="86">86</value>
+          <value code="87">87</value>
+          <value code="88">88</value>
+          <value code="89">89</value>
+          <value code="90">90</value>
+          <value code="91">91</value>
+          <value code="92">92</value>
+          <value code="93">93</value>
+          <value code="94">94</value>
+          <value code="95">95</value>
+          <value code="96">96</value>
+          <value code="97">97</value>
+          <value code="98">98</value>
+          <value code="99">99</value>
+        </values>
+      </variable>
+      <variable ident="68" type="single">
+        <name>intro</name>
+        <label>intro - Bonjour. Je suis ... de l'institut IPSOS.</label>
+        <position start="437" finish="437"/>
+        <values>
+          <value code="1">Continuer (Taper 'RDV' pour RDV/PAGE DE CONTACT)</value>
+        </values>
+      </variable>
+      <variable ident="69" type="single">
+        <name>q1</name>
+        <label>q1 - Etes-vous</label>
+        <position start="438" finish="438"/>
+        <values>
+          <value code="1">Un homme</value>
+          <value code="2">Une femme</value>
+        </values>
+      </variable>
+      <variable ident="70" type="multiple">
+        <name>q2</name>
+        <label>q2 - Quelle est votre nationalité?</label>
+        <position start="439" finish="470"/>
+        <spread subfields="16" width="2"/>
+        <values>
+          <value code="1">Française</value>
+          <value code="2">Suisse</value>
+          <value code="3">Allemande</value>
+          <value code="4">Britannique</value>
+          <value code="5">Italienne</value>
+          <value code="6">Belge</value>
+          <value code="16">Autre (specifier)</value>
+        </values>
+      </variable>
+      <variable ident="71" type="quantity">
+        <name>q2bis</name>
+        <label>q2bis - Dans quel département viviez-vous avant de devenir frontalier?</label>
+        <position start="471" finish="473"/>
+        <values>
+          <range from="1" to="99"/>
+          <value code="100">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="72" type="quantity">
+        <name>q3</name>
+        <label>q3 - Quelle est votre année de naissance?</label>
+        <position start="474" finish="477"/>
+        <values>
+          <range from="1900" to="1997"/>
+          <value code="1998">Refus</value>
+        </values>
+      </variable>
+      <variable ident="73" type="single">
+        <name>q3b</name>
+        <label>q3b - Dans quelle tranche d'âge vous situez-vous ?</label>
+        <position start="478" finish="478"/>
+        <values>
+          <value code="1">18-24 ans</value>
+          <value code="2">25-30 ans</value>
+          <value code="3">31-39 ans</value>
+          <value code="4">40-54 ans</value>
+          <value code="5">55-64 ans</value>
+          <value code="6">65-69 ans</value>
+          <value code="7">Plus de 69 ans</value>
+          <value code="8">Refus</value>
+        </values>
+      </variable>
+      <variable ident="74" type="single">
+        <name>q4</name>
+        <label>q4 -  Quelle est votre situation familiale?</label>
+        <position start="479" finish="479"/>
+        <values>
+          <value code="1">Célibataire</value>
+          <value code="2">Marié(e)</value>
+          <value code="3">Divorcé(e)</value>
+          <value code="4">Pacsé(e)</value>
+          <value code="5">En Concubinage</value>
+          <value code="6">Veuf /veuve</value>
+        </values>
+      </variable>
+      <variable ident="75" type="quantity">
+        <name>q5</name>
+        <label>q5 - Combien de personnes, y compris vous-même, vivent dans votre foyer?</label>
+        <position start="480" finish="480"/>
+        <values>
+          <range from="1" to="9"/>
+        </values>
+      </variable>
+      <variable ident="76" type="single">
+        <name>q6</name>
+        <label>q6 - Dans quel type de logement habitez-vous?</label>
+        <position start="481" finish="481"/>
+        <values>
+          <value code="1">un Studio</value>
+          <value code="2">un T1</value>
+          <value code="3">un T2</value>
+          <value code="4">un T3</value>
+          <value code="5">un T4</value>
+          <value code="6">un T5 ou plus</value>
+          <value code="7">une Maison</value>
+        </values>
+      </variable>
+      <variable ident="77" type="single">
+        <name>q7</name>
+        <label>q7 - Quel est le diplôme le plus élevé que vous ayez obtenu ?</label>
+        <position start="482" finish="483"/>
+        <values>
+          <value code="1">Pas de diplôme, BEPC/Brevet des collèges, CEP (Certificat d'études primaires)</value>
+          <value code="2">BEP, CAP, CFC</value>
+          <value code="3">Baccalauréat </value>
+          <value code="4">DEUG / BTS / DUT (Bac +2)</value>
+          <value code="5">Licence / Bachelor / Maîtrise / Master 1 (bac+3, bac+ 4)</value>
+          <value code="6">DESS / DEA / Master 2 / Ecole d'ingénieur / Grande école (bac + 5)</value>
+          <value code="7">Doctorat et autres formations au-delà de bac + 5</value>
+          <value code="8">Autre (citer)</value>
+          <value code="9">Refus</value>
+          <value code="10">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="78" type="single">
+        <name>q8_1</name>
+        <label>q8_1 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§En 1er</label>
+        <position start="484" finish="485"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="79" type="single">
+        <name>q8_2</name>
+        <label>q8_2 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§En Second</label>
+        <position start="486" finish="487"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="80" type="single">
+        <name>q8_3</name>
+        <label>q8_3 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="488" finish="489"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="81" type="single">
+        <name>q8_4</name>
+        <label>q8_4 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="490" finish="491"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="82" type="single">
+        <name>q8_5</name>
+        <label>q8_5 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="492" finish="493"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="83" type="single">
+        <name>q8_6</name>
+        <label>q8_6 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="494" finish="495"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="84" type="single">
+        <name>q8_7</name>
+        <label>q8_7 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="496" finish="497"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="85" type="single">
+        <name>q8_8</name>
+        <label>q8_8 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="498" finish="499"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="86" type="single">
+        <name>q8_9</name>
+        <label>q8_9 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="500" finish="501"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="87" type="single">
+        <name>q8_10</name>
+        <label>q8_10 - Quelles sont la ou les raisons qui font que vous travaillez en Suisse aujourd'hui ?<br/>...§</label>
+        <position start="502" finish="503"/>
+        <values>
+          <value code="1">Le dynamisme du marché du travail</value>
+          <value code="2">Le niveau de salaire</value>
+          <value code="3">Le niveau de responsabilité proposé sur votre poste</value>
+          <value code="4">Les possibilités d'évolution offertes au sein votre entreprise</value>
+          <value code="5">La qualité de la vie</value>
+          <value code="6">La qualité du système de soins</value>
+          <value code="7">La découverte d'une nouvelle culture</value>
+          <value code="8">La proximité avec votre lieu d'habitation</value>
+          <value code="9">Autre (ne pas citer)</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="88" type="multiple">
+        <name>q9</name>
+        <label>q9 - Quelles langues parlez-vous au travail avec vos collègues et clients?</label>
+        <position start="504" finish="508"/>
+        <spread subfields="5" width="1"/>
+        <values>
+          <value code="1">Français</value>
+          <value code="2">Allemand</value>
+          <value code="3">Italien</value>
+          <value code="4">Anglais</value>
+          <value code="5">Autres</value>
+        </values>
+      </variable>
+      <variable ident="89" type="single">
+        <name>q10</name>
+        <label>q10 - Parlez-vous Allemand ?</label>
+        <position start="509" finish="509"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="90" type="single">
+        <name>q11</name>
+        <label>q11 - Dans quel canton travaillez-vous?</label>
+        <position start="510" finish="511"/>
+        <values>
+          <value code="1">Argovie</value>
+          <value code="2">Bâle (Bâle-Ville et Bâle-Campagne)</value>
+          <value code="3">Berne</value>
+          <value code="4">Fribourg</value>
+          <value code="5">Genève</value>
+          <value code="6">Jura</value>
+          <value code="7">Neuchâtel</value>
+          <value code="8">Soleure</value>
+          <value code="9">Vaud</value>
+          <value code="10">Valais</value>
+          <value code="11">Zurich</value>
+          <value code="12">Autre (specifier)</value>
+        </values>
+      </variable>
+      <variable ident="91" type="single">
+        <name>q13</name>
+        <label>q13 - Quelle est votre catégorie socioprofessionnelle ?</label>
+        <position start="512" finish="512"/>
+        <values>
+          <value code="1">Agriculteurs</value>
+          <value code="2">Dirigeants</value>
+          <value code="3">Cadres et professions intellectuelles supérieures</value>
+          <value code="4">Professions intermédiaires</value>
+          <value code="5">Employés</value>
+          <value code="6">Ouvriers</value>
+          <value code="7">Indépendants</value>
+          <value code="8">Autre (specifier)</value>
+        </values>
+      </variable>
+      <variable ident="92" type="single">
+        <name>q14</name>
+        <label>q14 - Dans quel secteur d'activité travaillez-vous?</label>
+        <position start="513" finish="514"/>
+        <values>
+          <value code="1">Commerce</value>
+          <value code="2">Construction</value>
+          <value code="3">Hébergement et restauration</value>
+          <value code="4">Santé</value>
+          <value code="5">Ingénierie</value>
+          <value code="6">Horlogerie</value>
+          <value code="7">Chimie</value>
+          <value code="8">Services financiers</value>
+          <value code="9">Social et Médico-social</value>
+          <value code="10">Enseignement</value>
+          <value code="11">Autre (ne pas citer)</value>
+        </values>
+      </variable>
+      <variable ident="93" type="single">
+        <name>q14b</name>
+        <label>q14b - Travaillez-vous pour une entreprise du secteur public ou du secteur privé?</label>
+        <position start="515" finish="515"/>
+        <values>
+          <value code="1">Public</value>
+          <value code="2">Privé</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="94" type="single">
+        <name>q14c</name>
+        <label>q14c - Travaillez-vous pour une ONG?</label>
+        <position start="516" finish="516"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="95" type="single">
+        <name>q15</name>
+        <label>q15 - Quelle est la taille de votre entreprise en Suisse ?</label>
+        <position start="517" finish="517"/>
+        <values>
+          <value code="1">Moins de 10 salariés</value>
+          <value code="2">de 10 à 49 salariés</value>
+          <value code="3">de 50 à 99 salariés</value>
+          <value code="4">de 100 à 500 salariés</value>
+          <value code="5">plus de 500 salariés</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="96" type="single">
+        <name>q16</name>
+        <label>q16 - Quelle est la part de frontaliers au sein de votre entreprise ?</label>
+        <position start="518" finish="518"/>
+        <values>
+          <value code="1">moins de 25%</value>
+          <value code="2">entre 25 et 49%</value>
+          <value code="3">entre 50 et 75%</value>
+          <value code="4">plus de 75%</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="97" type="single">
+        <name>q17</name>
+        <label>q17 - Depuis combien de temps travaillez-vous en Suisse ? Si vous avez eu plusieurs postes en Suisse, merci de nous indiquer la durée totale cumulée</label>
+        <position start="519" finish="519"/>
+        <values>
+          <value code="1">Moins d'un an</value>
+          <value code="2">Entre 1 et 2 ans</value>
+          <value code="3">Entre 3 et 5 ans</value>
+          <value code="4">Entre 6 et 10 ans</value>
+          <value code="5">Plus de 10 ans</value>
+          <value code="6">Refus</value>
+        </values>
+      </variable>
+      <variable ident="98" type="single">
+        <name>q18</name>
+        <label>q18 - Quel type de contrat avez-vous ?</label>
+        <position start="520" finish="520"/>
+        <values>
+          <value code="1">Un contrat à durée déterminée (CDD)</value>
+          <value code="2">Un contrat à durée indéterminée (CDI)</value>
+          <value code="3">Un contrat d'Intérim</value>
+          <value code="4">Un autre type de contrat</value>
+          <value code="5">Refus</value>
+        </values>
+      </variable>
+      <variable ident="99" type="single">
+        <name>q19</name>
+        <label>q19 - Quel est votre revenu brut annuel hors prime en Suisse ?</label>
+        <position start="521" finish="521"/>
+        <values>
+          <value code="1">Moins de 35 000 CHF</value>
+          <value code="2">35 000  CHF à moins de 50 000 CHF</value>
+          <value code="3">50 000  CHF à moins de 80 000 CHF</value>
+          <value code="4">80 000  CHF à moins de 100 000 CHF</value>
+          <value code="5">100 000  CHF à moins de 150 000 CHF</value>
+          <value code="6">150 000  CHF et plus</value>
+          <value code="7">Refus</value>
+        </values>
+      </variable>
+      <variable ident="100" type="single">
+        <name>q20</name>
+        <label>q20 - Bénéficiez-vous de primes ?</label>
+        <position start="522" finish="522"/>
+        <values>
+          <value code="1">Non</value>
+          <value code="2">Moins de 5000 CHF par an</value>
+          <value code="3">Entre 5000 et moins de 10000 CHF par an</value>
+          <value code="4">Entre 10000 et moins de 15000 CHF par an</value>
+          <value code="5">15000 CHF et plus par an</value>
+          <value code="6">Refus</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="101" type="single">
+        <name>q21</name>
+        <label>q21 - Comment vous situez-vous par rapport à l'affirmation suivante? ' Je sais ce qu'il faut faire pour préparer ma retraite (ex. quand commencer, quelles solutions choisir ?...)'</label>
+        <position start="523" finish="523"/>
+        <values>
+          <value code="1">Tout à fait accord</value>
+          <value code="2">Plutôt d' accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="102" type="single">
+        <name>q22</name>
+        <label>q22 - Connaissez-vous le système de prévoyance en Suisse ?</label>
+        <position start="524" finish="524"/>
+        <values>
+          <value code="1">Très bien</value>
+          <value code="2">Bien</value>
+          <value code="3">Peu </value>
+          <value code="4">Pas du tout</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="103" type="single">
+        <name>q23</name>
+        <label>q23 - Avez-vous mis en place une solution de prévoyance en Suisse ?</label>
+        <position start="525" finish="525"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="104" type="single">
+        <name>q24</name>
+        <label>q24 - Envisagez-vous de le faire dans les 12 prochains mois ?</label>
+        <position start="526" finish="526"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="105" type="single">
+        <name>q25</name>
+        <label>q25 - Avez-vous un 3ème pilier ?</label>
+        <position start="527" finish="527"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="106" type="single">
+        <name>q26</name>
+        <label>q26 - Envisagez-vous d'en souscrire un dans les 12 prochains mois?</label>
+        <position start="528" finish="528"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="107" type="single">
+        <name>q27</name>
+        <label>q27 - Avez-vous mis en place une solution de prévoyance en France ?</label>
+        <position start="529" finish="529"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="108" type="single">
+        <name>q28</name>
+        <label>q28 -  Envisagez-vous de le faire dans les 12 prochains mois?</label>
+        <position start="530" finish="530"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="109" type="multiple">
+        <name>q29</name>
+        <label>q29 - De la part de qui souhaiteriez-vous recevoir des informations sur les solutions de prévoyance disponibles?</label>
+        <position start="531" finish="560"/>
+        <spread subfields="15" width="2"/>
+        <values>
+          <value code="1">Votre famille et vos proches</value>
+          <value code="2">Votre entreprise</value>
+          <value code="3">Votre banquier</value>
+          <value code="4">Votre assureur</value>
+          <value code="5">Votre caisse de pension</value>
+          <value code="6">Personne, vous vous renseignez vous-même</value>
+          <value code="7">Une association (du type le Groupement transfrontalier européen)</value>
+          <value code="8">(Autre) ne pas citer</value>
+          <value code="16">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="110" type="single">
+        <name>q30</name>
+        <label>q30 - Quelle est la part de vos dépenses en Euros et en Francs Suisse dans votre budget mensuel ?</label>
+        <position start="561" finish="561"/>
+        <values>
+          <value code="1">100% EUROS et 0% CHF</value>
+          <value code="2">80% EUROS et 20% CHF</value>
+          <value code="3">60% EUROS et 40% CHF</value>
+          <value code="4">50% EUROS et 50% CHF</value>
+          <value code="5">40% EUROS et 60% CHF</value>
+          <value code="6">20% EUROS et 80% CHF</value>
+          <value code="7">0% EUROS et 100% CHF</value>
+          <value code="8">Refus</value>
+          <value code="9">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="111" type="single">
+        <name>q31</name>
+        <label>q31 - Quel montant, en Euros, dépensez-vous de manière mensuelle dans les moyens de transport publics et privés, pour vous rendre au travail ?</label>
+        <position start="562" finish="562"/>
+        <values>
+          <value code="1">Moins de 100 Euros</value>
+          <value code="2">Entre 100 et 199 Euros</value>
+          <value code="3">Entre 200 et 399 Euros</value>
+          <value code="4">Entre 400 et 599 Euros</value>
+          <value code="5">Entre 600 et 799 Euros</value>
+          <value code="6">800 Euros et plus</value>
+          <value code="7">Refus</value>
+          <value code="8">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="112" type="single">
+        <name>q32</name>
+        <label>q32 - Quel montant épargnez-vous mensuellement en Euros en France?</label>
+        <position start="563" finish="563"/>
+        <values>
+          <value code="1">Vous n'épargnez pas en euros</value>
+          <value code="2">Moins de 100 euros</value>
+          <value code="3">Entre 100 et 499 euros</value>
+          <value code="4">Entre 500 et 999 euros</value>
+          <value code="5">Entre 1000 et 1999 euros</value>
+          <value code="6">2000 euros et plus</value>
+          <value code="7">Refus</value>
+          <value code="8">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="113" type="single">
+        <name>q33</name>
+        <label>q33 - Quel montant épargnez-vous mensuellement en Francs Suisses (CHF) en Suisse?</label>
+        <position start="564" finish="564"/>
+        <values>
+          <value code="1">Vous n'épargnez pas en CHF</value>
+          <value code="2">Moins de 100 CHF</value>
+          <value code="3">Entre 100 et 499 CHF</value>
+          <value code="4">Entre 500 et 999 CHF</value>
+          <value code="5">Entre 1000 et 1999 CHF</value>
+          <value code="6">2000 CHF et plus</value>
+          <value code="7">Refus</value>
+          <value code="8">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="114" type="single">
+        <name>q34</name>
+        <label>q34 - Quelle distance y-a-t-il entre votre domicile et votre lieu de travail ?</label>
+        <position start="565" finish="565"/>
+        <values>
+          <value code="1">Moins de 10 km</value>
+          <value code="2">Entre 10 et moins de 20 km</value>
+          <value code="3">Entre 20 et moins de 30 km</value>
+          <value code="4">Entre 30 et moins de 50 km</value>
+          <value code="5">Entre 50 et 70km</value>
+          <value code="6">Plus de 70 Km</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="115" type="single">
+        <name>q35</name>
+        <label>q35 - Combien de temps mettez-vous le matin pour vous rendre au travail?</label>
+        <position start="566" finish="566"/>
+        <values>
+          <value code="1">Moins de 15 minutes</value>
+          <value code="2">Entre 15 et moins de 30 minutes</value>
+          <value code="3">Entre 30 et moins de 45 minutes</value>
+          <value code="4">Entre 45 et moins de 60 minutes</value>
+          <value code="5">Entre 60 et moins de 90 minutes</value>
+          <value code="6">90 minutes et plus</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="116" type="multiple">
+        <name>q36</name>
+        <label>q36 - Quel(s) moyen(s) de transport utilisez-vous pour vous rendre au travail ?</label>
+        <position start="567" finish="606"/>
+        <spread subfields="20" width="2"/>
+        <values>
+          <value code="1">La voiture sans covoiturage</value>
+          <value code="2">La voiture avec covoiturage</value>
+          <value code="3">Le bus</value>
+          <value code="4">Le tramway</value>
+          <value code="5">Le train</value>
+          <value code="6">Le bateau</value>
+          <value code="7">Un deux-roues motorisés</value>
+          <value code="8">Un vélo</value>
+          <value code="9">La marche à pied</value>
+          <value code="10">Un autre moyen de transport</value>
+        </values>
+      </variable>
+      <variable ident="117" type="single">
+        <name>q37</name>
+        <label>q37 - Dans quel moyen de transport passez-vous le plus de temps?</label>
+        <position start="607" finish="608"/>
+        <values>
+          <value code="1">La voiture sans covoiturage</value>
+          <value code="2">La voiture avec covoiturage</value>
+          <value code="3">Le bus</value>
+          <value code="4">Le tramway</value>
+          <value code="5">Le train</value>
+          <value code="6">Le bateau</value>
+          <value code="7">Un deux-roues motorisés</value>
+          <value code="8">Un vélo</value>
+          <value code="9">La marche à pied</value>
+          <value code="10">Un autre moyen de transport</value>
+        </values>
+      </variable>
+      <variable ident="118" type="single">
+        <name>q37b</name>
+        <label>q37b - Seriez-vous prêt à faire davantage de covoiturage à l'avenir ?</label>
+        <position start="609" finish="609"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="119" type="single">
+        <name>q38</name>
+        <label>q38 - Utilisez-vous un parking relais (P+R)?</label>
+        <position start="610" finish="610"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="120" type="single">
+        <name>q39</name>
+        <label>q39 - Prenez-vous l'autoroute le matin, en France, pour vous rendre au travail?</label>
+        <position start="611" finish="611"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="121" type="single">
+        <name>q40</name>
+        <label>q40 - Prenez-vous l'autoroute le matin, en Suisse, pour vous rendre au travail?</label>
+        <position start="612" finish="612"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="122" type="single">
+        <name>q41</name>
+        <label>q41 - En tant que frontalier, vous sentez vous socialement intégré EN SUISSE ?</label>
+        <position start="613" finish="613"/>
+        <values>
+          <value code="1">Oui, Tout à fait</value>
+          <value code="2">Oui, Plutôt</value>
+          <value code="3">Non, plutôt pas</value>
+          <value code="4">Non, pas du tout</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="123" type="single">
+        <name>q41b</name>
+        <label>q41b - En tant que frontalier, vous sentez vous socialement intégré dans votre entreprise?</label>
+        <position start="614" finish="614"/>
+        <values>
+          <value code="1">Oui, tout à fait</value>
+          <value code="2">Oui, plutôt</value>
+          <value code="3">Non, plutôt pas</value>
+          <value code="4">Non, pas du tout</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="124" type="single">
+        <name>q41c</name>
+        <label>q41c - Diriez-vous que votre statut de frontalier a un impact sur votre évolution professionnelle?</label>
+        <position start="615" finish="615"/>
+        <values>
+          <value code="1">Oui, un impact très positif</value>
+          <value code="2">Oui, un impact plutôt positif</value>
+          <value code="3">Non, pas d'impact</value>
+          <value code="4">Oui, un impact négatif</value>
+          <value code="5">Oui, un impact très négatif</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="125" type="single">
+        <name>q42</name>
+        <label>q42 - Avez-vous des relations sociales en Suisse en dehors de votre sphère professionnelle ?</label>
+        <position start="616" finish="616"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="126" type="single">
+        <name>q43</name>
+        <label>q43 - Faites-vous la majorité des achats de la vie courante (habillement, nourriture, loisirs) en Suisse?</label>
+        <position start="617" finish="617"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="127" type="single">
+        <name>q44</name>
+        <label>q44 - Participez-vous aux fêtes et manifestations Suisses?</label>
+        <position start="618" finish="618"/>
+        <values>
+          <value code="1">Très fréquemment</value>
+          <value code="2">Assez fréquemment</value>
+          <value code="3">Occasionnellement</value>
+          <value code="4">Rarement</value>
+          <value code="5">Jamais</value>
+        </values>
+      </variable>
+      <variable ident="128" type="single">
+        <name>q45</name>
+        <label>q45 - Effectuez-vous vos loisirs et sorties en Suisse?</label>
+        <position start="619" finish="619"/>
+        <values>
+          <value code="1">Oui au moins 1 fois par semaine</value>
+          <value code="2">Oui au moins 1 fois tous les 15 jours</value>
+          <value code="3">Oui au moins 1 fois par mois</value>
+          <value code="4">Oui au moins une fois tous les 3 mois</value>
+          <value code="5">Non</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="129" type="single">
+        <name>q46</name>
+        <label>q46 - Comment qualifieriez-vous l'ambiance de travail au sein de votre entreprise?</label>
+        <position start="620" finish="620"/>
+        <values>
+          <value code="1">Très bonne</value>
+          <value code="2">Assez bonne</value>
+          <value code="3">Assez mauvaise</value>
+          <value code="4">Très mauvaise</value>
+          <value code="5">Refus</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="130" type="single">
+        <name>q47</name>
+        <label>q47 - Concernant votre logement actuel, vous êtes...?</label>
+        <position start="621" finish="621"/>
+        <values>
+          <value code="1">Propriétaire de votre résidence principale</value>
+          <value code="2">Locataire</value>
+          <value code="3">(Autre (logé à titre gratuit, ...))</value>
+          <value code="4">Refus</value>
+        </values>
+      </variable>
+      <variable ident="131" type="single">
+        <name>q48</name>
+        <label>q48 - Etiez-vous propriétaire de votre résidence principale avant de venir travailler en Suisse ?</label>
+        <position start="622" finish="622"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="132" type="single">
+        <name>q49</name>
+        <label>q49 - Quel âge aviez-vous au moment de votre achat?</label>
+        <position start="623" finish="623"/>
+        <values>
+          <value code="1">25 ans et moins</value>
+          <value code="2">Entre 26 et 30 ans</value>
+          <value code="3">Entre 31 et 35 ans</value>
+          <value code="4">Entre 36 et 40 ans</value>
+          <value code="5">Entre 41 et 45 ans</value>
+          <value code="6">Entre 46 et 50 ans</value>
+          <value code="7">Plus de 50 ans</value>
+          <value code="8">Refus</value>
+          <value code="9">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="133" type="single">
+        <name>q50</name>
+        <label>q50 - Lors de l'achat de votre résidence principale quelle(s) devise(s) avez-vous utilisé pour votre prêt?</label>
+        <position start="624" finish="624"/>
+        <values>
+          <value code="1">L'Euro</value>
+          <value code="2">Le Franc Suisse (CHF)</value>
+          <value code="3">Un mélange Euro et Franc Suisse</value>
+          <value code="4">Une autre devise</value>
+          <value code="5">(Vous n'avez pas eu besoin de prêt)</value>
+          <value code="6">Refus</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="134" type="single">
+        <name>q51</name>
+        <label>q51 - Avez-vous utilisé une banque située en Suisse ou une banque située en France pour financer votre achat ...?</label>
+        <position start="625" finish="625"/>
+        <values>
+          <value code="1">Une banque située en Suisse</value>
+          <value code="2">Une banque située en France</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="135" type="single">
+        <name>q52</name>
+        <label>q52 - Quelle était la valeur de votre résidence principale au moment de l'acquisition ?</label>
+        <position start="626" finish="627"/>
+        <values>
+          <value code="1">Moins de 200 000 euros</value>
+          <value code="2">Entre 200 000 et moins de 250 000 Euros</value>
+          <value code="3">Entre 250 000 et moins de 300 000 Euros</value>
+          <value code="4">Entre 300 000 et moins de 350 000 Euros</value>
+          <value code="5">Entre 350 000 et moins de 400 000 Euros</value>
+          <value code="6">Entre 400 000 et moins de 500 000 Euros</value>
+          <value code="7">Entre 500 000 et moins de 600 000 Euros</value>
+          <value code="8">Entre 600 000 et moins de 700 000 euros</value>
+          <value code="9">Entre 700 000 et moins de 800 000 Euros</value>
+          <value code="10">Entre 800 000 et moins de 900 000 euros</value>
+          <value code="11">Entre 900 000 et moins de 1 million d'euros</value>
+          <value code="12">1 million d'euros et plus</value>
+          <value code="20">Refus</value>
+          <value code="21">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="136" type="single">
+        <name>q53</name>
+        <label>q53 - Avez-vous des projets d'achat immobilier dans les 2 prochaines années en France ?</label>
+        <position start="628" finish="628"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="137" type="single">
+        <name>q54</name>
+        <label>q54 - Avez-vous des projets d'achat immobilier dans les 2 prochaines années en Suisse ?</label>
+        <position start="629" finish="629"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="138" type="single">
+        <name>q55</name>
+        <label>q55 - Quelles devises pensez-vous utiliser pour votre prêt?</label>
+        <position start="630" finish="630"/>
+        <values>
+          <value code="1">L'Euro</value>
+          <value code="2">Le Franc Suisse (CHF)</value>
+          <value code="3">Un mélange Euro et Franc Suisse</value>
+          <value code="4">Une autre devise</value>
+          <value code="5">(Vous n'aurez pas besoin de prêt)</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="139" type="single">
+        <name>q56</name>
+        <label>q56 - Pensez-vous utiliser une banque située en Suisse ou une banque située en France pour financer votre achat...?</label>
+        <position start="631" finish="631"/>
+        <values>
+          <value code="1">Une banque située en Suisse</value>
+          <value code="2">Une banque située en France</value>
+          <value code="3">(les deux)</value>
+          <value code="4">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="140" type="single">
+        <name>q57</name>
+        <label>q57 - Quelle proportion de votre salaire changez-vous mensuellement en EURO ?</label>
+        <position start="632" finish="632"/>
+        <values>
+          <value code="1">Moins de 20 %</value>
+          <value code="2">Entre 20 % et 39%</value>
+          <value code="3">Entre 40 et 59% </value>
+          <value code="4">Entre 60 et 79%</value>
+          <value code="5">Entre 80 et 100%</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="141" type="single">
+        <name>q58_1</name>
+        <label>q58_1 - Comment changez-vous votre salaire suisse en Euros ?§En 1er</label>
+        <position start="633" finish="634"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="142" type="single">
+        <name>q58_2</name>
+        <label>q58_2 - Comment changez-vous votre salaire suisse en Euros ?§En second</label>
+        <position start="635" finish="636"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="143" type="single">
+        <name>q58_3</name>
+        <label>q58_3 - Comment changez-vous votre salaire suisse en Euros ?§En troisième</label>
+        <position start="637" finish="638"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="144" type="single">
+        <name>q58_4</name>
+        <label>q58_4 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="639" finish="640"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="145" type="single">
+        <name>q58_5</name>
+        <label>q58_5 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="641" finish="642"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="146" type="single">
+        <name>q58_6</name>
+        <label>q58_6 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="643" finish="644"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="147" type="single">
+        <name>q58_7</name>
+        <label>q58_7 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="645" finish="646"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="148" type="single">
+        <name>q58_8</name>
+        <label>q58_8 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="647" finish="648"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="149" type="single">
+        <name>q58_9</name>
+        <label>q58_9 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="649" finish="650"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="150" type="single">
+        <name>q58_10</name>
+        <label>q58_10 - Comment changez-vous votre salaire suisse en Euros ?§</label>
+        <position start="651" finish="652"/>
+        <values>
+          <value code="1">Via des bureaux de change</value>
+          <value code="2">Via un virement depuis votre compte en Suisse vers votre compte en France</value>
+          <value code="3">Via un prélèvement depuis votre compte en France sur votre compte en Suisse</value>
+          <value code="4">Via des retraits en EUROS aux bancomats en Suisse</value>
+          <value code="5">Via des dépôts en liquide de CHF sur mon compte en France</value>
+          <value code="6">Via un outil de change de devises en ligne</value>
+          <value code="21">Refus</value>
+          <value code="22">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="151" type="single">
+        <name>q59</name>
+        <label>q59 - Consultez-vous le cours de change du jour lorsque vous transférez votre salaire de Suisse en Francs Suisses (CHF) vers la France en EURO ?</label>
+        <position start="653" finish="653"/>
+        <values>
+          <value code="1">Toujours</value>
+          <value code="2">Souvent</value>
+          <value code="3">Rarement</value>
+          <value code="4">Jamais</value>
+        </values>
+      </variable>
+      <variable ident="152" type="single">
+        <name>q60old</name>
+        <label>q60old - Lorsque vous transférez votre salaire de Suisse en Francs Suisses (CHF) vers la France en EURO quel est le critère le plus important pour vous?</label>
+        <position start="654" finish="654"/>
+        <values>
+          <value code="1">La souplesse de la solution de rapatriement de salaire</value>
+          <value code="2">Le cours de change</value>
+          <value code="3">La rapidité du rapatriement</value>
+          <value code="4">Non reponse/aucun</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="153" type="single">
+        <name>q61</name>
+        <label>q61 - Avez-vous une solution pour garantir et sécuriser votre cours de change ?</label>
+        <position start="655" finish="655"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="154" type="single">
+        <name>q62</name>
+        <label>q62 - Depuis le 1er juin 2014, le droit d'option en matière d'assurance maladie a évolué. Il n'est en effet plus possible de souscrire un contrat auprès d'une assurance privée française. Selon vous quel impact cela aura-il sur votre budget ?</label>
+        <position start="656" finish="656"/>
+        <values>
+          <value code="1">Un impact très positif</value>
+          <value code="2">Un impact positif</value>
+          <value code="3">Aucun impact</value>
+          <value code="4">Un impact négatif</value>
+          <value code="5">Un impact très négatif</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="155" type="single">
+        <name>q63</name>
+        <label>q63 - Avez-vous déjà choisi votre prestataire pour votre assurance complémentaire?</label>
+        <position start="657" finish="657"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non pas encore</value>
+          <value code="3">Non je ne souhaite pas prendre d'assurance complémentaire</value>
+        </values>
+      </variable>
+      <variable ident="156" type="single">
+        <name>q64</name>
+        <label>q64 - Suite à la votation du 9 février 2014, qui pourrait introduire des quotas et autorisations préalables à l'embauche, êtes-vous, pour votre emploi de frontalier.....?</label>
+        <position start="658" finish="658"/>
+        <values>
+          <value code="1">Très inquiet</value>
+          <value code="2">Plutôt inquiet</value>
+          <value code="3">Pas du tout inquiet</value>
+          <value code="4">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="157" type="single">
+        <name>q65</name>
+        <label>q65 - Selon vous quel impact aura cette votation sur votre salaire ?</label>
+        <position start="659" finish="659"/>
+        <values>
+          <value code="1">Forte hausse du salaire</value>
+          <value code="2">Légère hausse du salaire</value>
+          <value code="3">Aucun impact sur votre salaire</value>
+          <value code="4">Légère baisse du salaire</value>
+          <value code="5">Forte baisse du salaire</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="158" type="single">
+        <name>q66</name>
+        <label>q66 - Selon vous quel impact aura cette votation sur votre évolution de carrière en Suisse?</label>
+        <position start="660" finish="660"/>
+        <values>
+          <value code="1">Un impact très positif</value>
+          <value code="2">Un impact assez positif</value>
+          <value code="3">Aucun impact</value>
+          <value code="4">Un impact assez négatif</value>
+          <value code="5">Un impact très négatif</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="159" type="single">
+        <name>q67</name>
+        <label>q67 - Selon vous quel impact aura la votation sur vos relations quotidiennes avec vos collègues Suisses?</label>
+        <position start="661" finish="661"/>
+        <values>
+          <value code="1">Un impact très positif</value>
+          <value code="2">Un impact assez positif</value>
+          <value code="3">Aucun impact</value>
+          <value code="4">Un impact assez négatif</value>
+          <value code="5">Un impact très négatif</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="160" type="single">
+        <name>qclose</name>
+        <label>qclose - ((txtclo))<br/>Au revoir</label>
+        <position start="662" finish="662"/>
+        <values>
+          <value code="1">RACCROCHER</value>
+        </values>
+      </variable>
+      <variable ident="161" type="single">
+        <name>q4b</name>
+        <label>q4b - Votre conjoint travaille-t-il aussi en Suisse ?</label>
+        <position start="663" finish="663"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="162" type="quantity">
+        <name>q5b</name>
+        <label>q5b - Combien d'enfants composent votre foyer ?</label>
+        <position start="664" finish="665"/>
+        <values>
+          <range from="0" to="9"/>
+          <value code="10">Refus</value>
+        </values>
+      </variable>
+      <variable ident="163" type="single">
+        <name>q7b</name>
+        <label>q7b - Avez-vous suivi des études en Suisse ?</label>
+        <position start="666" finish="666"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="164" type="single">
+        <name>q29b</name>
+        <label>q29b - En cas de licenciement, retraite anticipée, chômage ou invalidité, les frontaliers peuvent avoir des lacunes dans la constitution de leur retraite de base en Suisse. Seriez-vous prêt à cotiser facultativement à l'AVS si cette option était possible ?</label>
+        <position start="667" finish="667"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="165" type="quantity">
+        <name>q35bh</name>
+        <label>q35bh - Le plus souvent à quelle heure partez-vous travailler ?</label>
+        <position start="668" finish="669"/>
+        <values>
+          <range from="1" to="24"/>
+          <value code="25">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="166" type="quantity">
+        <name>q35bm</name>
+        <label>q35bm</label>
+        <position start="670" finish="671"/>
+        <values>
+          <range from="0" to="59"/>
+          <value code="60">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="167" type="quantity">
+        <name>q35ch</name>
+        <label>q35ch - Le plus souvent à quelle heure partez-vous de votre travail ?<br/>ENQ : Noter l'heure, si horaires variables relancer sur le plus souvent</label>
+        <position start="672" finish="673"/>
+        <values>
+          <range from="1" to="24"/>
+          <value code="25">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="168" type="quantity">
+        <name>q35cm</name>
+        <label>q35cm</label>
+        <position start="674" finish="675"/>
+        <values>
+          <range from="0" to="59"/>
+          <value code="60">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="169" type="multiple">
+        <name>q35d</name>
+        <label>q35d - Vos heures de départ pour aller au travail et pour en repartir sont guidées par:</label>
+        <position start="676" finish="707"/>
+        <spread subfields="16" width="2"/>
+        <values>
+          <value code="1">La contrainte des horaires par votre entreprise</value>
+          <value code="2">Des horaires de travail décalés en lien avec votre profession</value>
+          <value code="3">Un choix pour éviter les embouteillages</value>
+          <value code="4">La possibilité par votre entreprise d'avoir des horaires flexibles</value>
+          <value code="5">Un choix lié à une contrainte familiale (ex : récupération des enfants à la sortie de l'école)</value>
+          <value code="16">Autre (specifier)</value>
+        </values>
+      </variable>
+      <variable ident="170" type="single">
+        <name>q37c</name>
+        <label>q37c - Utilisez-vous les nouveaux moyens de transport en commun (par exemple le projet CEVA avec le Léman Expres) développés dans le bassin genevois ?</label>
+        <position start="708" finish="708"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Non reponse/aucun</value>
+          <value code="4">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="171" type="single">
+        <name>q40b</name>
+        <label>q40b - En tant que frontalier, vous sentez vous socialement intégré EN FRANCE ?</label>
+        <position start="709" finish="709"/>
+        <values>
+          <value code="1">Oui, Tout à fait</value>
+          <value code="2">Oui, Plutôt</value>
+          <value code="3">Non, plutôt pas</value>
+          <value code="4">Non, pas du tout</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="172" type="single">
+        <name>q41a</name>
+        <label>q41a - Avant de travailler en Suisse, aviez-vous noué des relations ou liens sociaux dans ce pays ?</label>
+        <position start="710" finish="710"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="173" type="multiple">
+        <name>q42b</name>
+        <label>q42b - Quels types de dépenses faites-vous habituellement en Suisse ?<br/>S'agit-il de dépenses de...</label>
+        <position start="711" finish="742"/>
+        <spread subfields="16" width="2"/>
+        <values>
+          <value code="1">Loisirs</value>
+          <value code="2">Habillement</value>
+          <value code="3">Alimentation</value>
+          <value code="4">Equipement (mobilier)</value>
+          <value code="5">Multimédias</value>
+          <value code="16">Autre (specifier)</value>
+          <value code="17">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="174" type="single">
+        <name>q44b</name>
+        <label>q44b - Avez-vous le sentiment d'appartenir à une région transfrontalière ?</label>
+        <position start="743" finish="743"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="175" type="single">
+        <name>q56b</name>
+        <label>q56b - Actuellement, vous gérez votre budget et vos opérations quotidiennes des 2 côtés de la frontière (France et Suisse) via ...</label>
+        <position start="744" finish="744"/>
+        <values>
+          <value code="1">Une (ou plusieurs) banque en France uniquement </value>
+          <value code="2">Une (ou plusieurs) banque en Suisse uniquement</value>
+          <value code="3">Une (ou plusieurs) banque en France et une (ou plusieurs) banque en Suisse</value>
+          <value code="4">Refus</value>
+        </values>
+      </variable>
+      <variable ident="176" type="single">
+        <name>q56cn</name>
+        <label>q56cn - Si vous aviez la possibilité d'avoir une banque en suisse vous permettant de rapatrier votre salaire GRATUITEMENT, et une banque en France vous permettant de gérer vos opérations quotidiennes, seriez-vous intéressé par cette offre ?</label>
+        <position start="745" finish="745"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Possède déjà cette offre</value>
+          <value code="4">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="177" type="single">
+        <name>q56d</name>
+        <label>q56d - Depuis l'abandon du taux plancher en 2015, êtes-vous plus sensible ou attentif au cours de change lorsque vous effectuez des opérations de change ?</label>
+        <position start="746" finish="746"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+        </values>
+      </variable>
+      <variable ident="178" type="single">
+        <name>q56e_1</name>
+        <label>q56e_1 - Quel est votre avis par rapport aux déclarations suivantes :§L'abandon du taux plancher en 2015 est une opportunité pour vous d'augmenter votre pouvoir d'achat</label>
+        <position start="747" finish="747"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="179" type="single">
+        <name>q56e_2</name>
+        <label>q56e_2 - Quel est votre avis par rapport aux déclarations suivantes :§L'abandon du taux plancher en 2015 augmente le risque de change</label>
+        <position start="748" finish="748"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="180" type="single">
+        <name>q56e_3</name>
+        <label>q56e_3 - Quel est votre avis par rapport aux déclarations suivantes :§L'abandon du taux plancher en 2015 vous a incité à prendre une solution de garantie de change</label>
+        <position start="749" finish="749"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="181" type="single">
+        <name>q56e_4</name>
+        <label>q56e_4 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="750" finish="750"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="182" type="single">
+        <name>q56e_5</name>
+        <label>q56e_5 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="751" finish="751"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="183" type="single">
+        <name>q56e_6</name>
+        <label>q56e_6 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="752" finish="752"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="184" type="single">
+        <name>q56e_7</name>
+        <label>q56e_7 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="753" finish="753"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="185" type="single">
+        <name>q56e_8</name>
+        <label>q56e_8 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="754" finish="754"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="186" type="single">
+        <name>q56e_9</name>
+        <label>q56e_9 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="755" finish="755"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="187" type="single">
+        <name>q56e_10</name>
+        <label>q56e_10 - Quel est votre avis par rapport aux déclarations suivantes :§</label>
+        <position start="756" finish="756"/>
+        <values>
+          <value code="1">Tout à fait d'accord</value>
+          <value code="2">Plutôt d'accord</value>
+          <value code="3">Plutôt pas d'accord</value>
+          <value code="4">Pas du tout d'accord</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="188" type="multiple">
+        <name>q59b</name>
+        <label>q59b - Quels canaux utilisez-vous pour consulter le cours de change ?</label>
+        <position start="757" finish="762"/>
+        <spread subfields="6" width="1"/>
+        <values>
+          <value code="1">Le site internet de votre banque</value>
+          <value code="2">Le guichet de votre banque</value>
+          <value code="3">Un bureau de change</value>
+          <value code="4">Une application mobile spécialisée</value>
+          <value code="5">Un site d'information financière (exemple : Yahoo Finance)</value>
+          <value code="6">Presse (papier ou télévisée)</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="189" type="single">
+        <name>q59c</name>
+        <label>q59c - Lorsque vous réalisez des opérations de change, connaissez-vous les différents frais qui sont appliqués par votre intermédiaire de change ?</label>
+        <position start="763" finish="763"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="190" type="single">
+        <name>q59d</name>
+        <label>q59d - Souhaiteriez-vous plus de transparence de la part de votre intermédiaire de change concernant ces différents frais ?</label>
+        <position start="764" finish="764"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="191" type="multiple">
+        <name>q60</name>
+        <label>q60 - Lorsque vous transférez votre salaire de Suisse en Francs Suisses (CHF) vers la France en EURO quel est le critère le plus important pour vous?</label>
+        <position start="765" finish="770"/>
+        <spread subfields="6" width="1"/>
+        <values>
+          <value code="1">La souplesse de la solution de rapatriement de salaire</value>
+          <value code="2">Le cours de change</value>
+          <value code="3">La rapidité du rapatriement</value>
+          <value code="4">La simplicité d'utilisation du service</value>
+          <value code="5">La sécurisation du rapatriement</value>
+          <value code="6">L'existante d'une application mobile</value>
+          <value code="7">Non reponse/aucun</value>
+          <value code="8">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="192" type="single">
+        <name>q61b</name>
+        <label>q61b - Dans 10 ans, pensez-vous que le taux de change sera toujours favorable pour le frontalier ?</label>
+        <position start="771" finish="771"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="193" type="multiple">
+        <name>q68</name>
+        <label>q68 - Suite à la votation du 9 février 2014, la loi sur la préférence indigène light entrera en vigueur au 1er juillet 2018 favorisant l'embauche des chômeurs en Suisse plutôt que de recourir à la main d'oeuvre étrangère, Que pensez-vous de cette mesure ?</label>
+        <position start="772" finish="774"/>
+        <spread subfields="3" width="1"/>
+        <values>
+          <value code="1">C'est une juste mesure,</value>
+          <value code="2">C'est injuste pour les chômeurs frontaliers qui se retrouvent discriminés</value>
+          <value code="3">Les entreprises suisses devraient pouvoir recruter librement et sans        contrainte</value>
+          <value code="4">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="194" type="single">
+        <name>q69</name>
+        <label>q69 - Depuis 10 ans, sous le coup des mouvements populistes, un climat anti-frontaliers a vu le jour.<br/>Pensez-vous que cela a eu un effet sur votre emploi ou votre évolution de carrière en Suisse ?</label>
+        <position start="775" finish="775"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="195" type="single">
+        <name>q70</name>
+        <label>q70 - Pensez-vous que cela a eu un effet positif ou négatif sur vos relations quotidiennes avec vos collègues Suisses ?</label>
+        <position start="776" finish="776"/>
+        <values>
+          <value code="1">Très positif</value>
+          <value code="2">Plutôt positif</value>
+          <value code="3">Aucun impact</value>
+          <value code="4">Plutôt négatif</value>
+          <value code="5">Très négatif</value>
+          <value code="6">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="196" type="single">
+        <name>q17b</name>
+        <label>q17b - Depuis que vous travaillez en Suisse, avez-vous déjà changé d'entreprise ?</label>
+        <position start="777" finish="777"/>
+        <values>
+          <value code="1">Oui, une fois</value>
+          <value code="2">Oui, plusieurs fois</value>
+          <value code="3">Non, jamais</value>
+          <value code="4">Refus</value>
+        </values>
+      </variable>
+      <variable ident="197" type="multiple">
+        <name>q23n</name>
+        <label>q23n - Depuis le début de la crise sanitaire (mars 2020), avez-vous connu les situations suivantes.</label>
+        <position start="778" finish="781"/>
+        <spread subfields="4" width="1"/>
+        <values>
+          <value code="1">Une période de chômage partiel ou total</value>
+          <value code="2">Un changement de poste dans le même secteur d'activité</value>
+          <value code="3">Une reconversion professionnelle dans un autre secteur d'activité</value>
+          <value code="4">Aucune de ces situations </value>
+          <value code="5">Refus</value>
+        </values>
+      </variable>
+      <variable ident="198" type="single">
+        <name>q26b</name>
+        <label>q26b - Avez-vous le sentiment d'être suffisamment informé sur les solutions de prévoyance en France et en Suisse ?</label>
+        <position start="782" finish="782"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="199" type="single">
+        <name>q35e</name>
+        <label>q35e - En dehors des mesures exceptionnelles liées à l'épidémie de Covid-19, pratiquez-vous le télétravail ?</label>
+        <position start="783" finish="783"/>
+        <values>
+          <value code="1">Oui, un jour par semaine</value>
+          <value code="2">Oui, deux jours par semaine</value>
+          <value code="3">Oui, 3 jours ou plus par semaine</value>
+          <value code="4">Non</value>
+        </values>
+      </variable>
+      <variable ident="200" type="single">
+        <name>q35f</name>
+        <label>q35f - Était-ce déjà le cas avant la crise sanitaire liée à l'épidémie de Covid-19 (mars 2020) ?</label>
+        <position start="784" finish="784"/>
+        <values>
+          <value code="1">Oui, vous pratiquiez AUTANT le télétravail</value>
+          <value code="2">Non, vous ne pratiquiez JAMAIS le télétravail</value>
+          <value code="3">Non, vous pratiquiez MOINS le télétravail</value>
+          <value code="4">Non, vous pratiquiez DAVANTAGE le télétravail</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="201" type="single">
+        <name>q36b</name>
+        <label>q36b - Seriez-vous prêts à utiliser des moyens de transports plus écologiques ?</label>
+        <position start="785" finish="785"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="202" type="multiple">
+        <name>q45n</name>
+        <label>q45n - Par quel(s) moyen(s) vous informez-vous sur les particularités de votre statut de frontalier ?</label>
+        <position start="786" finish="793"/>
+        <spread subfields="8" width="1"/>
+        <values>
+          <value code="1">Des forums</value>
+          <value code="2">Des sites spécialisés</value>
+          <value code="3">Une association de frontaliers (GTE ou autres)</value>
+          <value code="4">Votre entourage</value>
+          <value code="5">Les réseaux sociaux</value>
+          <value code="6">Autre</value>
+          <value code="7">Vous ne vous informez pas sur votre statut de frontalier</value>
+          <value code="8">Autre (specifier)</value>
+        </values>
+      </variable>
+      <variable ident="203" type="single">
+        <name>q45b</name>
+        <label>q45b - Faites-vous partie d'une association de frontaliers ?</label>
+        <position start="794" finish="794"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">Refus</value>
+        </values>
+      </variable>
+      <variable ident="204" type="multiple">
+        <name>q45c</name>
+        <label>q45c - Dans quel but faites-vous partie d'une communauté ou association de frontaliers ?</label>
+        <position start="795" finish="798"/>
+        <spread subfields="4" width="1"/>
+        <values>
+          <value code="1">Pour le lien social</value>
+          <value code="2">Pour avoir de l'information (emploi, fiscalité, protection sociale, vie quotidienne etc.)</value>
+          <value code="3">Autre</value>
+          <value code="4">Autre (specifier)</value>
+        </values>
+      </variable>
+      <variable ident="205" type="multiple">
+        <name>q45ter</name>
+        <label>q45ter - Quels réseaux sociaux avez-vous l'habitude d'utiliser ?</label>
+        <position start="799" finish="820"/>
+        <spread subfields="11" width="2"/>
+        <values>
+          <value code="1">Facebook</value>
+          <value code="2">Google Plus</value>
+          <value code="3">Instagram</value>
+          <value code="4">Pinterest</value>
+          <value code="5">Snapchat</value>
+          <value code="6">Tik Tok</value>
+          <value code="7">Twitter</value>
+          <value code="8">Whatsapp</value>
+          <value code="9">YouTube</value>
+          <value code="10">Autres</value>
+          <value code="11">Autre (specifier)</value>
+          <value code="12">Non reponse/aucun</value>
+        </values>
+      </variable>
+      <variable ident="206" type="single">
+        <name>q45qua</name>
+        <label>q45qua - À quelle fréquence utilisez-vous habituellement ces réseaux sociaux ?</label>
+        <position start="821" finish="821"/>
+        <values>
+          <value code="1">Plusieurs fois par jour</value>
+          <value code="2">Environ 1 fois par jour</value>
+          <value code="3">4 à 5 fois par semaine</value>
+          <value code="4">2 à 3 fois par semaine</value>
+          <value code="5">Environ 1 fois par semaine</value>
+          <value code="6">Plus rarement</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="207" type="single">
+        <name>q58b</name>
+        <label>q58b - Quel outil de change de devises en ligne utilisez-vous le plus ?</label>
+        <position start="822" finish="823"/>
+        <values>
+          <value code="1">Revolut</value>
+          <value code="2">Telexoo</value>
+          <value code="3">Mon Change</value>
+          <value code="4">Wise</value>
+          <value code="5">Ibani</value>
+          <value code="6">Teso</value>
+          <value code="7">B-sharpe</value>
+          <value code="8">Migros</value>
+          <value code="9">Autres</value>
+          <value code="10">Autre (specifier)</value>
+          <value code="11">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="208" type="single">
+        <name>q62n</name>
+        <label>q62n - Souhaiteriez-vous pouvoir gérer entièrement vos comptes et opérations via un service de banque à distance ?</label>
+        <position start="824" finish="824"/>
+        <values>
+          <value code="1">Oui</value>
+          <value code="2">Non</value>
+          <value code="3">(Le fait déjà)</value>
+          <value code="4">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="209" type="single">
+        <name>q63n</name>
+        <label>q63n - Vous personnellement, à quelle fréquence consultez-vous le site internet de votre/vos banque(s) ?</label>
+        <position start="825" finish="825"/>
+        <values>
+          <value code="1">Tous les jours ou presque</value>
+          <value code="2">2 à 3 fois par semaine</value>
+          <value code="3">Environ 1 fois par semaine</value>
+          <value code="4">1 à 2 fois par mois</value>
+          <value code="5">5 à 6 fois par an</value>
+          <value code="6">Moins souvent</value>
+          <value code="7">Jamais</value>
+          <value code="8">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="210" type="multiple">
+        <name>q63b</name>
+        <label>q63b - Pour quelles raisons consultez-vous le site internet de votre/vos banque(s) ?</label>
+        <position start="826" finish="830"/>
+        <spread subfields="5" width="1"/>
+        <values>
+          <value code="1">Pour consulter vos comptes</value>
+          <value code="2">Pour réaliser des opérations</value>
+          <value code="3">Pour obtenir des informations liées à votre statut de frontaliers</value>
+          <value code="4">Autre</value>
+          <value code="5">Autre (specifier)</value>
+          <value code="6">Refus</value>
+          <value code="7">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="211" type="single">
+        <name>q64n</name>
+        <label>q64n - Avez-vous connaissance de solutions d'épargne responsable dans votre/vos banque(s) ou ailleurs ?</label>
+        <position start="831" finish="831"/>
+        <values>
+          <value code="1">Oui, et ces solutions vous intéressent</value>
+          <value code="2">Oui, mais cela ne vous intéresse pas</value>
+          <value code="3">Non</value>
+        </values>
+      </variable>
+      <variable ident="212" type="single">
+        <name>q71</name>
+        <label>q71 - Pour finir, d'une manière générale, êtes-vous satisfait de la qualité de vie qu'offre votre lieu de résidence actuel ?</label>
+        <position start="832" finish="832"/>
+        <values>
+          <value code="1">Tout à fait satisfait</value>
+          <value code="2">Plutôt satisfait</value>
+          <value code="3">Plutôt pas satisfait</value>
+          <value code="4">Pas du tout satisfait</value>
+          <value code="5">Ne sait pas</value>
+        </values>
+      </variable>
+      <variable ident="213" type="multiple">
+        <name>q59bnew</name>
+        <label>q59bnew - Quels canaux utilisez-vous pour consulter le cours de change ?</label>
+        <position start="833" finish="840"/>
+        <spread subfields="8" width="1"/>
+        <values>
+          <value code="1">Le site internet de votre banque</value>
+          <value code="2">Le guichet de votre banque</value>
+          <value code="3">Un bureau de change</value>
+          <value code="4">Une application mobile spécialisée</value>
+          <value code="5">Un site d'information financière (exemple : Yahoo Finance)</value>
+          <value code="6">Presse (papier ou télévisée)</value>
+          <value code="7">Autre</value>
+          <value code="8">Autre (specifier)</value>
+          <value code="9">Ne sait pas</value>
+        </values>
+      </variable>
+    </record>
+  </survey>
+</sss>
+

@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sss version="2.0">
+  <date>5 1 2022</date>
+  <time>11:24</time>
+  <origin>Confirmit Export</origin>
+  <user>nadege.baux</user>
+  <survey>
+    <title>21-000000-00-00- CX : GLOBAL FUND WAMBO V6 _ PROD</title>
+    <record ident="V">
+      <variable ident="1" type="quantity">
+        <name>responseid</name>
+        <label>responseid</label>
+        <position start="1" finish="8" />
+        <values>
+          <range from="00000001" to="99999999" />
+        </values>
+      </variable>
+      <variable ident="2" type="quantity">
+        <name>respid</name>
+        <label>respid</label>
+        <position start="9" finish="16" />
+        <values>
+          <range from="00000001" to="99999999" />
+        </values>
+      </variable>
+      <variable ident="3" type="character">
+        <name>status</name>
+        <label>status</label>
+        <position start="17" finish="36" />
+        <size>20</size>
+      </variable>
+      <variable ident="4" type="date">
+        <name>interview_start</name>
+        <label>interview_start</label>
+        <position start="37" finish="44" />
+        <values>
+          <range from="00010101" to="99991231" />
+        </values>
+      </variable>
+      <variable ident="5" type="time">
+        <name>interview_start_time</name>
+        <label>interview_start_time</label>
+        <position start="45" finish="50" />
+        <values>
+          <range from="000000" to="235959" />
+        </values>
+      </variable>
+      <variable ident="6" type="date">
+        <name>interview_end</name>
+        <label>interview_end</label>
+        <position start="51" finish="58" />
+        <values>
+          <range from="00010101" to="99991231" />
+        </values>
+      </variable>
+      <variable ident="7" type="time">
+        <name>interview_end_time</name>
+        <label>interview_end_time</label>
+        <position start="59" finish="64" />
+        <values>
+          <range from="000000" to="235959" />
+        </values>
+      </variable>
+      <variable ident="8" type="date">
+        <name>last_touched</name>
+        <label>last_touched</label>
+        <position start="65" finish="72" />
+        <values>
+          <range from="00010101" to="99991231" />
+        </values>
+      </variable>
+      <variable ident="9" type="time">
+        <name>last_touched_time</name>
+        <label>last_touched_time</label>
+        <position start="73" finish="78" />
+        <values>
+          <range from="000000" to="235959" />
+        </values>
+      </variable>
+      <variable ident="10" type="date">
+        <name>lastcomplete</name>
+        <label>lastcomplete</label>
+        <position start="79" finish="86" />
+        <values>
+          <range from="00010101" to="99991231" />
+        </values>
+      </variable>
+      <variable ident="11" type="time">
+        <name>lastcomplete_time</name>
+        <label>lastcomplete_time</label>
+        <position start="87" finish="92" />
+        <values>
+          <range from="000000" to="235959" />
+        </values>
+      </variable>
+      <variable ident="12" type="quantity">
+        <name>qconx</name>
+        <label>recode nombre de connexions</label>
+        <position start="93" finish="98" />
+        <values>
+          <range from="0" to="999999" />
+        </values>
+      </variable>
+      <variable ident="13" type="character">
+        <name>userid</name>
+        <label>userid</label>
+        <position start="99" finish="298" />
+        <size>200</size>
+      </variable>
+      <variable ident="14" type="character">
+        <name>key</name>
+        <label>key</label>
+        <position start="299" finish="498" />
+        <size>200</size>
+      </variable>
+      <variable ident="15" type="single">
+        <name>TYPE_OF_USER</name>
+        <label>info fichier : TYPE OF USER </label>
+        <position start="499" finish="499" />
+        <values>
+          <value code="1">_1 REQUESTOR</value>
+          <value code="2">_2 APPROVER</value>
+        </values>
+      </variable>
+      <variable ident="16" type="single">
+        <name>HEALTH_USERS</name>
+        <label>info fichier : HEALTH USERS</label>
+        <position start="500" finish="500" />
+        <values>
+          <value code="1">_1 HEALTH USERS</value>
+          <value code="2">_2 NON-HEALTH USERS</value>
+        </values>
+      </variable>
+      <variable ident="17" type="single">
+        <name>NON_HEALTH_USERS</name>
+        <label>info fichier : NON HEALTH USERS</label>
+        <position start="501" finish="501" />
+        <values>
+          <value code="1">_1 NON-HEALTH USERS</value>
+          <value code="2">_2 HEALTH USERS</value>
+        </values>
+      </variable>
+      <variable ident="18" type="single">
+        <name>COUNTRY</name>
+        <label>info fichier : COUNTRY</label>
+        <position start="502" finish="503" />
+        <values>
+          <value code="1">_1 Angola</value>
+          <value code="2">_2 Armenia</value>
+          <value code="3">_3 Bangladesh</value>
+          <value code="4">_4 Belarus</value>
+          <value code="5">_5 Benin</value>
+          <value code="6">_6 Bhutan</value>
+          <value code="7">_7 Burkina Faso</value>
+          <value code="8">_8 Cameroon</value>
+          <value code="9">_9 Central African Republic</value>
+          <value code="10">_10 Comoros</value>
+          <value code="11">_11 Côte d'Ivoire</value>
+          <value code="12">_12 Dominican Republic</value>
+          <value code="13">_13 DR du Congo</value>
+          <value code="14">_14 Gambia</value>
+          <value code="15">_15 Georgia</value>
+          <value code="16">_16 Ghana</value>
+          <value code="17">_17 Guatemala</value>
+          <value code="18">_18 Guinea</value>
+          <value code="19">_19 Haiti</value>
+          <value code="20">_20 Honduras</value>
+          <value code="21">_21 Indonesia</value>
+          <value code="22">_22 Jordan</value>
+          <value code="23">_23 Laos</value>
+          <value code="24">_24 Lesotho</value>
+          <value code="25">_25 Liberia</value>
+          <value code="26">_26 Madagascar</value>
+          <value code="27">_27 Malawi</value>
+          <value code="28">_28 Mali</value>
+          <value code="29">_29 Mauritania</value>
+          <value code="30">_30 Mongolia</value>
+          <value code="31">_31 Mozambique</value>
+          <value code="32">_32 Myanmar</value>
+          <value code="33">_33 Namibia</value>
+          <value code="34">_34 Nepal</value>
+          <value code="35">_35 Nicaragua</value>
+          <value code="36">_36 Niger</value>
+          <value code="37">_37 Nigeria</value>
+          <value code="38">_38 Pakistan</value>
+          <value code="39">_39 Papua New Guinea</value>
+          <value code="40">_40 Philippines</value>
+          <value code="41">_41 Senegal</value>
+          <value code="42">_42 Sierra Leone</value>
+          <value code="43">_43 Solomon Islands</value>
+          <value code="44">_44 Tanzania</value>
+          <value code="45">_45 Tchad</value>
+          <value code="46">_46 Thailand</value>
+          <value code="47">_47 Timor Leste</value>
+          <value code="48">_48 Togo</value>
+          <value code="49">_49 Uganda</value>
+          <value code="50">_50 Uzbekistan</value>
+          <value code="51">_51 Vietnam</value>
+          <value code="52">_52 Zambia</value>
+          <value code="53">_53 Zanzibar</value>
+          <value code="54">_54 Zimbabwe</value>
+          <value code="55">_55 Republique du Congo</value>
+          <value code="56">_56 Cap-Vert</value>
+          <value code="57">_57 Equateur</value>
+          <value code="58">_58 Ethiopia</value>
+          <value code="59">_59 Jamaica</value>
+          <value code="60">_60 Sri Lanka</value>
+          <value code="61">_61 South Africa</value>
+          <value code="62">_62 Ukraine</value>
+          <value code="63">_63 Guyana</value>
+          <value code="64">_64 Kenya</value>
+          <value code="65">_65 Multi-country</value>
+          <value code="66">_66 Costa Rica</value>
+          <value code="67">_67 Botswana</value>
+          <value code="68">_68 Peru</value>
+          <value code="69">_69 Suriname</value>
+          <value code="70">_70 Bolivia</value>
+          <value code="71">_71 Ecuador</value>
+          <value code="72">_72 Gabon</value>
+          <value code="73">_73 Guinea Bissau</value>
+          <value code="74">_74 Kazakhstan</value>
+          <value code="75">_75 Cambodia</value>
+          <value code="76">_76 Moldova</value>
+          <value code="77">_77 Paraguay</value>
+          <value code="78">_78 Sao Tome &amp;amp; Principe</value>
+          <value code="79">_79 Swaziland</value>
+          <value code="80">_80 Colombia</value>
+          <value code="81">_81 Chad</value>
+          <value code="82">_82 Eswatini</value>
+          <value code="83">_83 Rwanda</value>
+          <value code="84">_84 Southern Africa</value>
+          <value code="85">_85 Cap Vert</value>
+          <value code="86">_86 Costa Rica</value>
+          <value code="87">_87 Morocco</value>
+          <value code="88">_88 Kosovo</value>
+        </values>
+      </variable>
+      <variable ident="19" type="single">
+        <name>GF_REGION</name>
+        <label>info fichier : GF REGION</label>
+        <position start="504" finish="505" />
+        <values>
+          <value code="1">_1 Central Africa</value>
+          <value code="2">_2 EECA</value>
+          <value code="3">_3 HI Africa 1</value>
+          <value code="4">_4 HI Africa 2</value>
+          <value code="5">_5 HI Asia</value>
+          <value code="6">_6 LAC</value>
+          <value code="7">_7 MENA</value>
+          <value code="8">_8 S&amp;E Africa</value>
+          <value code="9">_9 SE Asia</value>
+          <value code="10">_10 South East Asia</value>
+          <value code="11">_11 Western Africa</value>
+        </values>
+      </variable>
+      <variable ident="20" type="single">
+        <name>ELECTRONIC_APPROVALS</name>
+        <label>info fichier : ELECTRONIC APPROVALS</label>
+        <position start="506" finish="506" />
+        <values>
+          <value code="1">_1 don't accept electronic approvals</value>
+          <value code="2">_2 Accept electronic approvals</value>
+        </values>
+      </variable>
+      <variable ident="21" type="single">
+        <name>DOMESTIC_FUNDING_REGISTERED</name>
+        <label>info fichier : DOMESTIC FUNDING REGISTERED</label>
+        <position start="507" finish="507" />
+        <values>
+          <value code="1">_1 Domestic Funding USERS</value>
+          <value code="2">_2 NO Domestic Funding USERS</value>
+        </values>
+      </variable>
+      <variable ident="22" type="single">
+        <name>SUPP3</name>
+        <label>info fichier : 3SUPP</label>
+        <position start="508" finish="508" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="23" type="single">
+        <name>SUPP1</name>
+        <label>info fichier : 1SUPP1</label>
+        <position start="509" finish="509" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="24" type="single">
+        <name>EXCLUDE3</name>
+        <label>info fichier : EXCLUDE3</label>
+        <position start="510" finish="510" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="25" type="single">
+        <name>GRANT_USER</name>
+        <label>info fichier : GRANT USER</label>
+        <position start="511" finish="511" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="26" type="single">
+        <name>NON_GRANT_USER</name>
+        <label>info fichier : NON-GRANT USER</label>
+        <position start="512" finish="512" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="27" type="single">
+        <name>NON_HEALTH_ONLY</name>
+        <label>info fichier : NON_HEALTH_ONLY</label>
+        <position start="513" finish="513" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="28" type="single">
+        <name>acces</name>
+        <label>CATI ou CAWI</label>
+        <position start="514" finish="514" />
+        <values>
+          <value code="1">CATI</value>
+          <value code="2">CAWI</value>
+        </values>
+      </variable>
+      <variable ident="29" type="multiple">
+        <name>recA3</name>
+        <label>What is your favorite feature?  First? </label>
+        <position start="515" finish="520" />
+        <values>
+          <value code="1">One stop shop (one single place &amp; process to procure products across all diseases)</value>
+          <value code="2">Approval Chain (order management tracking)</value>
+          <value code="3">Comments (communications tracking)</value>
+          <value code="4">Catalogue (visibility into product, reference prices &amp; indicative lead-times)</value>
+          <value code="5">Financials (linkages into grant financials)</value>
+          <value code="6">Other (please specify)</value>
+        </values>
+      </variable>
+      <variable ident="30" type="character">
+        <name>recA3_6_other</name>
+        <label>Other (please specify) (What is your favorite feature?  First? )</label>
+        <position start="521" finish="720" />
+        <size>200</size>
+      </variable>
+      <variable ident="31" type="multiple">
+        <name>recE6</name>
+        <label>What could be your favorite enhancement for wambo.org?   First? </label>
+        <position start="721" finish="730" />
+        <values>
+          <value code="1">Catalogue content</value>
+          <value code="2">More frequent tracking of delivery</value>
+          <value code="3">Direct interface between the warehouse management system of your CMS and wambo.org</value>
+          <value code="5">TB medicines</value>
+          <value code="7">Online tendering/eRFQ</value>
+          <value code="9">Simplified onboarding/user update process</value>
+          <value code="10">Pre-ordering / embedded forecasting</value>
+          <value code="8">Other (please specify)</value>
+        </values>
+      </variable>
+      <variable ident="32" type="character">
+        <name>recE6_8_other</name>
+        <label>Other (please specify) (What could be your favorite enhancement for wambo.org?   First? )</label>
+        <position start="731" finish="930" />
+        <size>200</size>
+      </variable>
+      <variable ident="33" type="single">
+        <name>l</name>
+        <label>Select your language :   User ID : ^f('userid')^</label>
+        <position start="931" finish="932" />
+        <values>
+          <value code="9">English</value>
+          <value code="12">Français</value>
+          <value code="10">Spanish</value>
+        </values>
+      </variable>
+      <variable ident="34" type="single">
+        <name>Bouton_Next</name>
+        <label>Bouton_Next</label>
+        <position start="933" finish="933" />
+        <values>
+          <value code="1" />
+          <value code="2" />
+          <value code="3" />
+        </values>
+      </variable>
+      <variable ident="35" type="single">
+        <name>Bouton_Back</name>
+        <label>Bouton_Back</label>
+        <position start="934" finish="934" />
+        <values>
+          <value code="1" />
+          <value code="2" />
+        </values>
+      </variable>
+      <variable ident="36" type="quantity">
+        <name>tmp_debTimer0</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="935" finish="947" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="37" type="quantity">
+        <name>tmp_debTimerIntro</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="948" finish="960" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="38" type="multiple">
+        <name>CNIL</name>
+        <label>CNIL</label>
+        <position start="961" finish="962" />
+        <values>
+          <value code="1">Accept to continue </value>
+          <value code="2">Refused</value>
+        </values>
+      </variable>
+      <variable ident="39" type="quantity">
+        <name>tmp_finTimerIntro</name>
+        <label>FIN TIMER 16</label>
+        <position start="963" finish="975" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="40" type="quantity">
+        <name>tmp_debTimer1</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="976" finish="988" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="41" type="single">
+        <name>A1B1_1</name>
+        <label>A1B1_1 (On a scale from 0 to 10, how satisfied are you with the platform wambo.org? )</label>
+        <position start="989" finish="990" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="42" type="single">
+        <name>A1C_1</name>
+        <label>A1C_1 (On a scale from 0 to 10, would you recommend wambo.org for procurement of health products?)</label>
+        <position start="991" finish="992" />
+        <values>
+          <value code="10">Would definitely recommend10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Would definitely not recommend</value>
+        </values>
+      </variable>
+      <variable ident="43" type="single">
+        <name>A2_1</name>
+        <label>A2_1 (On a scale from 0 to 10, how easy is it to use the platform wambo.org? )</label>
+        <position start="993" finish="994" />
+        <values>
+          <value code="10">Very easy10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Very hard</value>
+        </values>
+      </variable>
+      <variable ident="44" type="quantity">
+        <name>tmp_finTimer1</name>
+        <label>FIN TIMER 16</label>
+        <position start="995" finish="1007" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="45" type="quantity">
+        <name>tmp_debTimer2</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="1008" finish="1020" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="46" type="single">
+        <name>B11A</name>
+        <label>Do you know how to create and schedule reports in wambo.org?</label>
+        <position start="1021" finish="1021" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="47" type="single">
+        <name>B11B_1</name>
+        <label>B11B_1 (On a scale from 0 to 10, how satisfied are you with this functionality?  )</label>
+        <position start="1022" finish="1023" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="48" type="single">
+        <name>B14A</name>
+        <label>Did you know that you could access delivery information directly through wambo.org?</label>
+        <position start="1024" finish="1024" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="3">No</value>
+        </values>
+      </variable>
+      <variable ident="49" type="single">
+        <name>B14C_1</name>
+        <label>B14C_1 (On a scale from 0 to 10, how satisfied are you with this functionality?)</label>
+        <position start="1025" finish="1026" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="50" type="quantity">
+        <name>tmp_finTimer2</name>
+        <label>FIN TIMER 16</label>
+        <position start="1027" finish="1039" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="51" type="quantity">
+        <name>tmp_debTimer3</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="1040" finish="1052" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="52" type="single">
+        <name>C2_1</name>
+        <label>C2_1 (How satisfied are you with the length of time taken to complete this procurement process through wambo.org (from requisition to order confirmation)?)</label>
+        <position start="1053" finish="1054" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="53" type="single">
+        <name>C9_1</name>
+        <label>C9_1 (How satisfied are you with the end-to-end lead time, from requisition submission to delivery, to order closure (Invoice Summary Statement)? )</label>
+        <position start="1055" finish="1056" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="54" type="single">
+        <name>C10</name>
+        <label>Did you know that you could access the final invoice (Invoice Summary Statement) directly through wambo.org?</label>
+        <position start="1057" finish="1057" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="55" type="single">
+        <name>C11_1</name>
+        <label>C11_1 (On a scale from 0 to 10, how satisfied are you with this functionality? )</label>
+        <position start="1058" finish="1059" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="56" type="single">
+        <name>C4_1</name>
+        <label>C4_1 (How satisfied are you with the onboarding process (initial registration and onboarding form updates)?)</label>
+        <position start="1060" finish="1061" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="57" type="character">
+        <name>C12</name>
+        <label>What could be improved?</label>
+        <position start="1062" finish="1261" />
+        <size>200</size>
+      </variable>
+      <variable ident="58" type="single">
+        <name>C13</name>
+        <label>Have you been requested to approve changes to a purchase order after it was already issued?</label>
+        <position start="1262" finish="1262" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="59" type="single">
+        <name>C14</name>
+        <label>Did you initiate the change?</label>
+        <position start="1263" finish="1263" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="60" type="single">
+        <name>C5_1</name>
+        <label>C5_1 (On a scale from 0 to 10, how satisfied are you with this PO change request?)</label>
+        <position start="1264" finish="1265" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="61" type="quantity">
+        <name>tmp_finTimer3</name>
+        <label>FIN TIMER 16</label>
+        <position start="1266" finish="1278" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="62" type="quantity">
+        <name>tmp_debTimer4</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="1279" finish="1291" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="63" type="single">
+        <name>D1A_1</name>
+        <label>D1A_1 (How satisfied are you with the help provided by the Global Fund when you have questions regarding the functioning of the Platform (how to create requisitions, ask for changes of the set up, etc)?  )</label>
+        <position start="1292" finish="1293" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+          <value code="13">I never neededhelp on the "how"</value>
+        </values>
+      </variable>
+      <variable ident="64" type="single">
+        <name>D1B_1</name>
+        <label>D1B_1 (How satisfied are you with the help provided by the Global Fund when you have questions regarding your requisitions/orders (status of requisition, delivery and product details)?)</label>
+        <position start="1294" finish="1295" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+          <value code="13">I never neededhelp on the "what"</value>
+        </values>
+      </variable>
+      <variable ident="65" type="single">
+        <name>D5</name>
+        <label>Do you know where to find the available training materials?</label>
+        <position start="1296" finish="1296" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="66" type="multiple">
+        <name>D2C</name>
+        <label>Which material did you find the most helpful? </label>
+        <position start="1297" finish="1301" />
+        <values>
+          <value code="1">Demonstration videos</value>
+          <value code="2">User manual</value>
+          <value code="3">Reporting guide</value>
+          <value code="5">Delivery tracking guide</value>
+          <value code="4">Other (please specify)</value>
+        </values>
+      </variable>
+      <variable ident="67" type="character">
+        <name>D2C_4_other</name>
+        <label>Other (please specify) (Which material did you find the most helpful? )</label>
+        <position start="1302" finish="1501" />
+        <size>200</size>
+      </variable>
+      <variable ident="68" type="single">
+        <name>D4A</name>
+        <label>Do you feel that you need (more) training? </label>
+        <position start="1502" finish="1502" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="69" type="character">
+        <name>D4B_7_other</name>
+        <label>Other (please specify) (Which topics do you feel you need (more) training on?  )</label>
+        <position start="1511" finish="1710" />
+        <size>200</size>
+      </variable>
+      <variable ident="70" type="quantity">
+        <name>tmp_finTimer4</name>
+        <label>FIN TIMER 16</label>
+        <position start="1711" finish="1723" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="71" type="quantity">
+        <name>tmp_debTimer5</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="1724" finish="1736" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="72" type="single">
+        <name>E17</name>
+        <label>Did you leverage wambo.org for the procurement of COVID-19 related products?</label>
+        <position start="1737" finish="1737" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="73" type="single">
+        <name>E18</name>
+        <label>Did you find what you were looking for?</label>
+        <position start="1738" finish="1738" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="74" type="single">
+        <name>E19</name>
+        <label>Was it because of :</label>
+        <position start="1739" finish="1739" />
+        <values>
+          <value code="1">Missing products (PRECISE)</value>
+          <value code="2">For another reason (PRECISE)</value>
+        </values>
+      </variable>
+      <variable ident="75" type="character">
+        <name>E19_1_other</name>
+        <label>Missing products (PRECISE) (Was it because of :)</label>
+        <position start="1740" finish="1939" />
+        <size>200</size>
+      </variable>
+      <variable ident="76" type="single">
+        <name>E8</name>
+        <label>E8</label>
+        <position start="1940" finish="1940" />
+        <values>
+          <value code="1">I am interested, and I would like to hear more about it</value>
+          <value code="2">No, I am not interested</value>
+        </values>
+      </variable>
+      <variable ident="77" type="single">
+        <name>E10</name>
+        <label>How satisfied are you with accessing and approving proforma invoices, credit notes and Invoice Summary Statements? </label>
+        <position start="1941" finish="1942" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="78" type="single">
+        <name>E11</name>
+        <label>On a scale from 0 to 10, how satisfied are you with the offline payment process?</label>
+        <position start="1943" finish="1944" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="79" type="single">
+        <name>E13</name>
+        <label>Understanding that your satisfaction with non-grant procurement may be different from your satisfaction with grant procurement, on a scale from 0 to 10, how satisfied are you with the platform wambo.org using non-grant funds? </label>
+        <position start="1945" finish="1946" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="80" type="single">
+        <name>E14</name>
+        <label>How likely are you to place another order on the platform wambo.org using non-grant funds?</label>
+        <position start="1947" finish="1947" />
+        <values>
+          <value code="1">Yes, definitely</value>
+          <value code="2">Yes, probably</value>
+          <value code="3">No, probably not</value>
+          <value code="4">No, definitely not</value>
+        </values>
+      </variable>
+      <variable ident="81" type="single">
+        <name>E6a</name>
+        <label>What would be your favorite next enhancement for wambo.org? First? </label>
+        <position start="1948" finish="1949" />
+        <values>
+          <value code="1">Catalogue content</value>
+          <value code="3">Direct interface between the warehouse management system of your CMS and wambo.org</value>
+          <value code="5">TB medicines</value>
+          <value code="7">Online tendering/eRFQ</value>
+          <value code="9">Simplified onboarding/user update process</value>
+          <value code="10">Pre-ordering / embedded forecasting</value>
+          <value code="8">Other (please specify)</value>
+        </values>
+      </variable>
+      <variable ident="82" type="character">
+        <name>E6a_8_other</name>
+        <label>Other (please specify) (What would be your favorite next enhancement for wambo.org? First? )</label>
+        <position start="1950" finish="2149" />
+        <size>200</size>
+      </variable>
+      <variable ident="83" type="single">
+        <name>E6b</name>
+        <label>What would be your favorite next enhancement for wambo.org? Second?</label>
+        <position start="2150" finish="2151" />
+        <values>
+          <value code="1">Catalogue content</value>
+          <value code="3">Direct interface between the warehouse management system of your CMS and wambo.org</value>
+          <value code="5">TB medicines</value>
+          <value code="7">Online tendering/eRFQ</value>
+          <value code="9">Simplified onboarding/user update process</value>
+          <value code="10">Pre-ordering / embedded forecasting</value>
+          <value code="8">Other (please specify)</value>
+        </values>
+      </variable>
+      <variable ident="84" type="character">
+        <name>E6b_8_other</name>
+        <label>Other (please specify) (What would be your favorite next enhancement for wambo.org? Second?)</label>
+        <position start="2152" finish="2351" />
+        <size>200</size>
+      </variable>
+      <variable ident="85" type="single">
+        <name>E6c</name>
+        <label>What would be your favorite next enhancement for wambo.org? Third?</label>
+        <position start="2352" finish="2353" />
+        <values>
+          <value code="1">Catalogue content</value>
+          <value code="3">Direct interface between the warehouse management system of your CMS and wambo.org</value>
+          <value code="5">TB medicines</value>
+          <value code="7">Online tendering/eRFQ</value>
+          <value code="9">Simplified onboarding/user update process</value>
+          <value code="10">Pre-ordering / embedded forecasting</value>
+          <value code="8">Other (please specify)</value>
+        </values>
+      </variable>
+      <variable ident="86" type="character">
+        <name>E6c_8_other</name>
+        <label>Other (please specify) (What would be your favorite next enhancement for wambo.org? Third?)</label>
+        <position start="2354" finish="2553" />
+        <size>200</size>
+      </variable>
+      <variable ident="87" type="quantity">
+        <name>tmp_finTimer5</name>
+        <label>FIN TIMER 16</label>
+        <position start="2554" finish="2566" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="88" type="quantity">
+        <name>tmp_debTimer6</name>
+        <label>DEBUT TIMER 17</label>
+        <position start="2567" finish="2579" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="89" type="single">
+        <name>FREQ</name>
+        <label>How often do you use the platform wambo.org?</label>
+        <position start="2580" finish="2580" />
+        <values>
+          <value code="1">Several times a year</value>
+          <value code="2">Only once a year</value>
+          <value code="3">Less often</value>
+        </values>
+      </variable>
+      <variable ident="90" type="single">
+        <name>ANONYMITY</name>
+        <label>Finally, please let us know whether you would be happy for Ipsos to forward your name and responses to the management of wambo.org/The Global Fund? </label>
+        <position start="2581" finish="2581" />
+        <values>
+          <value code="1">Yes</value>
+          <value code="2">No</value>
+        </values>
+      </variable>
+      <variable ident="91" type="quantity">
+        <name>tmp_finTimer6</name>
+        <label>FIN TIMER 16</label>
+        <position start="2582" finish="2594" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="92" type="quantity">
+        <name>tmp_finTimer0</name>
+        <label>FIN TIMER 16</label>
+        <position start="2595" finish="2607" />
+        <values>
+          <range from="-999999999999" to="999999999999" />
+        </values>
+      </variable>
+      <variable ident="93" type="single">
+        <name>B3_1</name>
+        <label>B3_1 (On a scale from 0 to 10, how satisfied are you with the catalogue of items available in wambo.org? )</label>
+        <position start="2608" finish="2609" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="94" type="single">
+        <name>C6_1</name>
+        <label>C6_1 (On a scale from 0 to 10, how satisfied are you with the Manufacturer allocation process?)</label>
+        <position start="2610" finish="2611" />
+        <values>
+          <value code="10">Very satisfied 10</value>
+          <value code="9">9</value>
+          <value code="8">8</value>
+          <value code="7">7</value>
+          <value code="6">6</value>
+          <value code="5">5</value>
+          <value code="4">4</value>
+          <value code="3">3</value>
+          <value code="2">2</value>
+          <value code="1">1</value>
+          <value code="0">0Not satisfied at all</value>
+        </values>
+      </variable>
+      <variable ident="95" type="multiple">
+        <name>D4B</name>
+        <label>Which topics do you feel you need (more) training on?  </label>
+        <position start="2612" finish="2621" />
+        <values>
+          <value code="1">Overall requisition process</value>
+          <value code="2">How to create requisitions</value>
+          <value code="3">How to approve requisitions</value>
+          <value code="4">Reporting for financial reconciliation</value>
+          <value code="5">PO change request process</value>
+          <value code="8">Order Tracking </value>
+          <value code="6">PO closure process</value>
+          <value code="9">How to upload a Signed PQ (for PRs who don’t accept electronic approvals)</value>
+          <value code="10">What to do in case changes to requisitions are needed</value>
+          <value code="7">Other (please specify)</value>
+        </values>
+      </variable>
+    </record>
+  </survey>
+</sss>

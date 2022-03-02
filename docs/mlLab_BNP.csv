@@ -1,140 +1,512 @@
-,0
-_1, KIA
-_2, HYUNDAI
-_5, OTHER
-_6, MULTI
-_7, KULKA SNIEZNA
-_3, MITSUBISHI
-_4, MOTORBIKES
-_14,InproperLabel
-_15,InproperLabel
-_0,InproperLabel
-_8,InproperLabel
-_9,InproperLabel
-_10,InproperLabel
-_11,InproperLabel
-_12,InproperLabel
-_13,InproperLabel
-_16,InproperLabel
-_17,InproperLabel
-_18,InproperLabel
-_19,InproperLabel
-_20,InproperLabel
-_21,InproperLabel
-_22,InproperLabel
-_23,InproperLabel
-_24,InproperLabel
-_25,InproperLabel
-_26,InproperLabel
-_27,InproperLabel
-_28,InproperLabel
-_29,InproperLabel
-_30,InproperLabel
-_31,InproperLabel
-_51,InproperLabel
-_52,InproperLabel
-_53,InproperLabel
-_54,InproperLabel
-_55,InproperLabel
-_56,InproperLabel
-_57,InproperLabel
-_58,InproperLabel
-_59,InproperLabel
-_60,InproperLabel
-_61,InproperLabel
-_62,InproperLabel
-_63,InproperLabel
-_64,InproperLabel
-_65,InproperLabel
-_66,InproperLabel
-_67,InproperLabel
-_68,InproperLabel
-_N24, Employees (Negatives statements)
-_69,InproperLabel
-_70,InproperLabel
-_71, Formalities / too much documentation to provide
-_72, No contact / little contact
-_73, Inadequate after-sales service
-_999, Don't know
-_997, other
-_99, DonÂ’t know
-_100,InproperLabel
-_114, EFL (European Leasing Fund) 
-_115, Santander Leasing
-_116, Getin Noble Bank
-_117, ING Bank Slaski
-_118, Impuls
-_119, Masterlease
-_120, Noble Bank
-_121, PSA Finance
-_122, BMW Financial Services
-_123, PKO BP
-_124, FCA Bank
-_125, Cofidis
-_33,InproperLabel
-_994, comparable
-_995, Refusal
-_996, all
-_998, None
-_98,InproperLabel
-_9999, refusal
-_1948, 1948
-_1949, 1949
-_1954, 1954
-_1955, 1955
-_1957, 1957
-_1959, 1959
-_1960, 1960
-_1961, 1961
-_1962, 1962
-_1966, 1966
-_1967, 1967
-_1968, 1968
-_1969, 1969
-_1970, 1970
-_1971, 1971
-_1972, 1972
-_1973, 1973
-_1974, 1974
-_1975, 1975
-_1976, 1976
-_1977, 1977
-_1978, 1978
-_1979, 1979
-_1980, 1980
-_1981, 1981
-_1982, 1982
-_1983, 1983
-_1984, 1984
-_1985, 1985
-_1986, 1986
-_1987, 1987
-_1988, 1988
-_1989, 1989
-_1990, 1990
-_1991, 1991
-_1992, 1992
-_1993, 1993
-_1994, 1994
-_1995, 1995
-_1997, 1997
-_101,InproperLabel
-_102,InproperLabel
-_32,InproperLabel
-_34,InproperLabel
-_35,InproperLabel
-_36,InproperLabel
-_37,InproperLabel
-_38,InproperLabel
-_39,InproperLabel
-_40,InproperLabel
-_41,InproperLabel
-_42,InproperLabel
-_43,InproperLabel
-_44,InproperLabel
-_45,InproperLabel
-_46,InproperLabel
-_47,InproperLabel
-_48,InproperLabel
-_49,InproperLabel
-_50,InproperLabel
+ Interview number,0
+ phone no 1,0
+ phone no 2,0
+ List,0
+ long-term rental,0
+ DF1,0
+ DF2,0
+ DF3,0
+ DF3_cat,0
+ DF4,0
+ db_name,0
+ db_shop_no,0
+ db_ID,0
+ P0 I am conducting the study on behalf of BNP Paribas Bank Polska BNP Paribas Bank Polska has asked us to carry out a satisfaction survey of their partners to help them better meet their needs,0
+" S1 Firstly, could you please tell me your role at the company?",0
+ S1bis Could I please speak to a dealership manager or a salesperson? ,0
+" S2 Are you involved in vehicle loan, leasing or long-term rental financing? ",0
+ K1 To what extent would you recommend BNP Paribas Bank Polska to a colleague or a business contact? ,1
+ K1bis Why did you give this rating?,0
+ A1How would you score your partnership with BNP Paribas Bank Polska in general?,1
+ O1 How much effort did you make to ensure that your last request was proceed by BNP Paribas Bank Polska?,1
+" B1a In your opinion, in terms of how quickly BNP Paribas Bank Polska makes financing decisions, what would be the ideal response time from BNP Paribas Bank Polska?",2
+ B2 How satisfied are you with how often you receive reporting documents from BNP Paribas Bank Polska?,1
+" B2a In your opinion, what would be the most suitable sending frequency?  ",2
+ B3 How satisfied are you with how often you receive reporting documents from BNP Paribas Bank Polska?,1
+ B4 Would it interest you to receive it?,0
+ C1 How satisfied are you in general with the quality of the contact you have had with analysts?,1
+" C5 What, in your opinion, should be the average waiting period for a decision regarding a loan / leasing / rental application (consent or refusal)?",2
+ D2 What would be the most appropriate contact frequency with the Salon Manager for you? ,2
+ EB2 You said that you were not totally satisfied with how often the products trainings conducted by BNP Paribas Bank Polska takes place How often would you prefer the products trainings conducted by BNP Paribas Bank Polska to take place?,2
+ EB4 You said that you were not totally satisfied with how often the sales technics trainings given by BNP Paribas Bank Polska takes place How often would you prefer  such trainings should take place? ,2
+" H1 Now let’s talk about the communications, documentation and advertising tprovided by BNP Paribas Bank Polska Generally, are you satisfied with the information and advertising materials provided by BNP Paribas Bank Polska ? ",1
+" I1 Using a scale from 1 to 10, where 1 means that you have a very poor impression , and 10 means that you have a very good impression  (with the scores in between serving to express your opinion more precisely), how would you rate your overall impression ",1
+ J1 Would you be willing to continue working with BNP Paribas Bank Polska in the future?,3
+ L1 Do you regularly work with a financial partner other than BNP Paribas Bank Polska?,0
+" L2 Apart from BNP Paribas Bank Polska, which credit organisations do you work with?",0
+" L3 Apart from BNP Paribas Bank Polska, which organisation do you work with most often?",0
+ L4 What are the two main reasons you work with another financial partner other than BNP Paribas Bank Polska?,0
+" Q1 Our client BNP Paribas Bank Polska might have some further questions to you, in order to make best use of the results of this study  With your permission - and only then - we would like to pass on your name and contact details together with your answe",0
+ Respondent ID,0
+ Wave,0
+ TELEPHONE,0
+ TELEPHONE2,0
+ nb_brand,0
+ brand1,0
+ brand2,0
+ db_region,0
+ db_categoria,0
+" Hello, Sir/Madam I am  from the IPSOS Research Institute BGZ BNP Paribas has asked us to carry out a satisfaction survey of their partners to help them better meet their needs",0
+ QBRAND Could you please choose the one you want to talk about your partnership with BGZ BNP Paribas?,0
+ S1 FUNCTION,0
+ S3 Do you sell?,0
+ S3A How are your annual sales (by volume) distributed between new and used vehicles? - New vehicles,0
+ S3A How are your annual sales (by volume) distributed between new and used vehicles? - Used vehicles,0
+ S4 Do you sell vehicles?,0
+ A1A Could you tell me for what reason(s) you are satisfied with your partnership with BGZ BNP Paribas?,1
+ A1B Could you tell me for what reason(s) you said you are not completely are satisfied with your partnership with BGZ BNP Paribas?,1
+" B1 Still using a scale of 1 to 10, how satisfied are you with BGZ BNP PARIBAS in terms of? - the speed with which they make financing decisions",1
+" B1 Still using a scale of 1 to 10, how satisfied are you with BGZ BNP PARIBAS in terms of? - the quality of support that BGZ BNP PARIBAS offers you",1
+" B1 Still using a scale of 1 to 10, how satisfied are you with BGZ BNP PARIBAS in terms of? - the speed of payment for a car",1
+" B1 Still using a scale of 1 to 10, how satisfied are you with BGZ BNP PARIBAS in terms of? - the overall payment offered by BGZ BNP PARIBAS",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - the waiting time before reaching an agent",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - the time taken to reach the right person",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - the politeness of the sales advisers",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - the sales advisers’ ability to listen",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - the clarity of the responses given by the sales advisers",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - the speed with which information about an application decision is made available (approval or refusal)",1
+" C2 Still using a scale of 1 to 10, in general, how satisfied are you with? - sales advisers’ ability to offer solutions for the most complex applications",1
+" C3 When contacting someone by telephone, how long would you say is the maximum amount of time that BGZ BNP PARIBAS should make callers wait?",2
+" C3 When contacting someone by telephone, how long would you say is the maximum amount of time that BGZ BNP PARIBAS should make callers wait? - other",2
+" C4 In terms of the time taken to reach the right person, how long would you say is the maximum amount of time that BGZ BNP PARIBAS should make callers wait?",2
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - quality of the relationship with the Zone Manager, in general",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - ease of contacting the Zone Manager",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - frequency of contact",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - their ability to identify your needs",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - their ability to find solutions",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - their professionalism",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - their independence in decision-making",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - their respect for their commitments",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - their support in solving problems",1
+" D1 Now let’s talk about the quality of contact you have in the field with the BGZ BNP PARIBAS Zone Manager who looks after your account For each of the criteria that I am going to read out to you regarding your relationship with the Zone Manager, could you tell me how satisfied you are? - the quality of reports provided by the Zone Manager",1
+ D2 What would be the most appropriate contact frequency with the Zone Manager for you? - other,0
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The BGZ BNP PARIBAS commercial offering in general",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The range of offerings from BGZ BNP PARIBAS (Financing, Balloon, Leasing and Insurance Compl Prod)",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - BGZ BNP PARIBAS’s ability to offer innovative financial solutions",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The ability to propose custom-made offers and promotions",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The extent to which credit products offered by BGZ BNP PARIBAS meet your customers’ needs (terms, duration, flexibility, etc)",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The rates offered for new vehicle credit financing",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The rates offered for used vehicle credit financing",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The additional products (life insurance, GAP) offered by BGZ BNP PARIBAS",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The quality of the salesperson training given by BGZ BNP PARIBAS",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The frequency of the salesperson training given by BGZ BNP PARIBAS",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The vehicle financing solutions offered to private individuals (traditional loan/balloon product)",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The vehicle financing solutions offered to commercial (traditional loan/leasing/balloon loan)",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The fit of Leasing, Balloon Credit products (operation, duration, residual value, flexibility ) with your customers’ needs",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The loan solutions offered by BGZ BNP Paribas",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The leasing solutions offered by BGZ BNP Paribas",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The financial products with HRV / Big ballonet",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The extent to which leasing products offered by BGZ BNP PARIBAS meet your customers’ needs (terms, duration, flexibility, etc)",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The rates offered for new vehicle leasing financing",1
+" E1 Now we’re going to talk about BGZ BNP PARIBAS’s commercial offering For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The rates offered for used vehicle leasing financing",1
+" EB1 Now we’re going to talk about the products trainings conducted by BGZ BNP Paribas on its offer For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - Overall, the quality of the product training",1
+" EB1 Now we’re going to talk about the products trainings conducted by BGZ BNP Paribas on its offer For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The competency of the trainer",1
+" EB1 Now we’re going to talk about the products trainings conducted by BGZ BNP Paribas on its offer For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The frequency of the product training",1
+" EB1 Now we’re going to talk about the products trainings conducted by BGZ BNP Paribas on its offer For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The adequacy of the training with your need",1
+" EB1 Now we’re going to talk about the products trainings conducted by BGZ BNP Paribas on its offer For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The training contents",1
+" EB3 Now we’re going to talk about the sale technics trainings given by BGZ BNP Paribas For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - Overall, the quality of the sales technics trainings",1
+" EB3 Now we’re going to talk about the sale technics trainings given by BGZ BNP Paribas For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The competency of the trainer",1
+" EB3 Now we’re going to talk about the sale technics trainings given by BGZ BNP Paribas For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The frequency of the sales techniques trainings",1
+" EB3 Now we’re going to talk about the sale technics trainings given by BGZ BNP Paribas For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The adequacy of the training with your need",1
+" EB3 Now we’re going to talk about the sale technics trainings given by BGZ BNP Paribas For each of the following criteria, I am going to ask you to tell me how satisfied you are on a scale from 1 to 10 - The training contents",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - Quality of application handling in general",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - The speed with which payment decisions are made",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - Respect for response deadlines to credit applications",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - Proactiveness in terms of proposing solutions if the application is refused (finding a solution to make the sale)",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - What BGZ BNP PARIBAS requires to grant the loan",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - How your suggestions are taken into consideration",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - The credit application acceptance rates for new vehicles",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - The credit application acceptance rates for used vehicles",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - Compliance with deadlines for financing your loan contracts",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - The flexibility offered to customers wishing to repay their loan early",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - Quality of application handling for private individuals",1
+" F1 Now let’s talk about handling credit applications in general On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of credit applications that you send to BGZ BNP PARIBAS? - Quality of application handling for commercial",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - The speed at which payment decisions are made",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - Respect for response deadlines to loan applications",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - Proactiveness in terms of proposing solutions if the application is refused (finding a solution to make the sale)",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - What BGZ BNP PARIBAS requires to grant the loan",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - How your suggestions are taken into consideration",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - The loan application acceptance rates for new vehicles [if S3 = 1 or 3]",1
+" F3 Now let’s talk specifically about handling loan applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied - The loan application acceptance rates for used vehicles [if S3 = 2 or 3]",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS?",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - The speed at which payment decisions are made",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - Respect for response deadlines to credit applications",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - Proactiveness in terms of proposing solutions if the application is refused (finding a solution to make the sale)",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - What BGZ BNP PARIBAS requires to grant the loan",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - How your suggestions are taken into consideration",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - The credit application acceptance rates for new vehicles",1
+" F4 Now let’s talk specifically about handling leasing applications On a scale of 1 to 10, where 1 means that you are not at all satisfied and 10 means that you are very satisfied (with the scores in between helping to express your opinion more precisely), how satisfied are you with the following aspects regarding the handling of leasing applications that you send to BGZ BNP PARIBAS? - The credit application acceptance rates for used vehicles",1
+" H2 And more specifically, in terms of - Variety of documents / materials sent by BGZ BNP Paribas",1
+" H2 And more specifically, in terms of - The clarity of commercial documentation",1
+" H2 And more specifically, in terms of - Quality of documents needed for training",1
+" H2 And more specifically, in terms of - Quality of reports",1
+" H3 In terms of the Sales Promotion and point-of-sale advertising offered by BGZ BNP PARIBAS, are you satisfied with? - The sale tools made provided by BGZ BNP PARIBAS, such as billboards, showroom advertising, simulators",1
+" H3 In terms of the Sales Promotion and point-of-sale advertising offered by BGZ BNP PARIBAS, are you satisfied with? - Promotional products (campaigns) offered to your site or brand by BGZ BNP PARIBAS",1
+" H3 In terms of the Sales Promotion and point-of-sale advertising offered by BGZ BNP PARIBAS, are you satisfied with? - Sales challenges/events from BGZ BNP PARIBAS",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 1 is the leading player in the market",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 2 can be trusted",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 3 is your preferred financial partner",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 4 offers innovative products and services",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 5 is an expert in its sector",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 6 puts customer and partner satisfaction at the heart of its work",1
+" I2 Here are a series of statements about BGZ BNP PARIBAS Please score each of these statements on a scale from 1 to 10, where 1 means that you completely disagree with the statement and 10 that you completely agree (the scores in between can be used to express your opinion more precisely) BGZ BNP PARIBASI2 DETAILLED IMAGE - 7 helps to improve our sales because of its reputation",1
+ L2 BENCHMARK - Getin Bank,0
+ L2 BENCHMARK - Santander Consumer Bank,0
+ L2 BENCHMARK - mBank,0
+ L2 BENCHMARK - Other Specify,0
+ L2 BENCHMARK - I do not want to answer this question,0
+ L2 BENCHMARK - Idea  Getin Leasing,0
+ L2 BENCHMARK - Santander Consumer Multirent,0
+ L2 BENCHMARK - mLeasing,0
+ L2 BENCHMARK - PKO Leasing,0
+ L2 BENCHMARK - Alior Leasing,0
+ L2 BENCHMARK - Alior Bank,0
+ L2 BENCHMARK,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - Because of a customer’s request,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - To get better financing terms,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - The commission I receive,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - An easier way of working,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - Because of a request from management,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - For the promotional offers/rates offered,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - Because I am obliged to reach a certain production level with the brand’s captive company,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - Other (specify),0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - I do not wish to answer this question) do not read,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS? - DK,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS?,0
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - Firstly, overall",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The range of business offerings proposed",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The quality of the relationship with the Zone, Region Manager who looks after your account",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The application acceptance rate",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The speed at which decisions are made",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The quality of service from the sales back office",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The business information and documents you receive",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The sales support tool",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The additional products (warranty extension, maintenance, etc) offered",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The competitiveness of its offers for private individual customers",1
+" L5 On a scale of 1 to 10, what score would you give to  in the following areas 1 means that you are not at all satisfied, 10 means that you are very satisfied, and the scores in between can be used to express your opinion more precisely - The competitiveness of its offers for business customers",1
+" L6 Of the themes we have just discussed, which are the three most important to you? - The range of business offerings proposed",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The quality of the relationship with the Zone Manager who looks after your account",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The application acceptance rate",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The speed at which decisions are made",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The quality of service from the sales back office",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The business information and documents/reports you receive",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The sales support tool",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The additional products (warranty extension, maintenance, etc) offered",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The competitiveness of its offers for private individual customers",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - The competitiveness of its offers for business customers",0
+" L6 Of the themes we have just discussed, which are the three most important to you? - DK",0
+ L7 Who and in which area is better from BGZ BNPP ?,0
+ L7 Who and in which area is better from BGZ BNPP ?,0
+ QCONTROLE_1,0
+ QCONTROLE_2,0
+" Q1 Our client BGZ BNP PARIBAS might have some further questions to you, in order to make best use of the results of this study With your permission - and only then - we would like to pass on your name and contact details together with your answers to the client Your consent is totally voluntary and can be withdrawn from BGZ BNP PARIBAS at any time and with immediate effect Do you consent that we pass on your name and your contact details together with your answers to our questions to BGZ BNP PARIBAS, so that they can contact you about the study results?",0
+ M1 Gender,0
+ CATEGORY,0
+ AUTOMOTO,0
+ Level,0
+ A1aT_oe,0
+ A1bT_oe,0
+ S1_4T_oe,0
+ C3_5T_oe,0
+ D2_4T_oe,0
+ EB2_6T_oe,0
+ EB4_6T_oe,0
+ L2_14T_oe,0
+ L4_8T_oe,0
+ L7T_oe,0
+ MF1_10T_oe,0
+ L2 BENCHMARK,0
+ L4 What are the two main reasons you work with another financial partner other than BGZ BNP PARIBAS?,0
+" L6 Of the themes we have just discussed, which are the three most important to you?",0
+ ID new,0
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+ Lista - Back Data,0

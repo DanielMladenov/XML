@@ -28,7 +28,8 @@ class xmlReader(object):
             self.root = self.xmlReader.root
 
 
-        def mlLabels(self):
+
+        def mlCatLabels(self):
             ret = []
             for flatQues in self.root.iter('columns'): 
                #print(flatQues)
@@ -39,10 +40,18 @@ class xmlReader(object):
                         for Ccat in ques.findall('categories'):    # old version was oQues.iter('categories')
                             TempCategories = self.xmlReader.getLabelatCurrentLevel(Ccat, "text", "en-US")
                             ret.append(TempCategories)
-                    
-
                         
             return ret
+
+
+        def mlQuesLabel(self):
+            ret = []
+            for flatQues in self.root.iter('columns'):
+                for ques in flatQues.iter('variable'):
+                    ret.append(self.xmlReader.getLabelOfQuesCL(ques, "text", "en-US", "title"))
+
+            return ret
+                
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
         #Based on the XML structure, the "Columns" cantain all of the flat questions.
@@ -234,9 +243,9 @@ class xmlReader(object):
 xmlTest = xmlReader('../docs/XML_BNP.xml')
 ml = xmlTest.get_inner_object()
 
-testPD = (ml.mlLabels())
+testPD = pd.Series(ml.mlQuesLabel())
 print(testPD)
-#testPD.to_csv(r'../docs/mlLab_BNP.csv')
+testPD.to_csv(r'../docs/mlLab_BNP.csv')
 
 
 #xmlTest.mlMode(xmlTest).mlLabels()
