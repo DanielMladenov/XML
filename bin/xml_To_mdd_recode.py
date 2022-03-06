@@ -12,6 +12,7 @@ class xmlImport(object):
         self.listQues = []
         self.listQuesLen = 0
         self.standardDelimiter = "_"
+        self.matrix = []
 
     def getLayout(self, quesName = "name", value = "value", labelName = "text", language="en-US", title = 'title'):
         for ques in self.root.iter('variable'):
@@ -25,16 +26,25 @@ class xmlImport(object):
         for i in range(1, self.listQuesLen):
             if i != self.listQuesLen - 1:
                 print(self.listQues[i-1], self.listQues[i], self.listQues[i+1])
+                #return [self.listQues[i-1], self.listQues[i], self.listQues[i+1]]
             else:
                 print(self.listQues[i-1], self.listQues[i])
+                #return [self.listQues[i-1], self.listQues[i]]
+
+    def getNoFlatQuestionMatrix(self):
+        for i in range(1, self.listQuesLen):
+            if self.listQues[i].find(self.standardDelimiter) != -1:
+                self.matrix.append([0,1,0])
+            else:
+                pass
+                self.matrix.append([0,0,0])
 
 
 
 
 
     def printMyQues(self):
-        print(self.listQuesLen)
-        print(self.listQues[353])
+        print(self.matrix)
 
 
 
@@ -43,6 +53,7 @@ class xmlImport(object):
 #xmlTest = xmlImport('../docs/12375e01_liv.xml')
 xmlTest = xmlImport(r'C:\Users\Danie\Documents\GitHub\XML\docs\147736_SurveyData.xml')
 xmlTest.getLayout()
-xmlTest.checkQuestionName()
+xmlTest.getNoFlatQuestionMatrix()
+#xmlTest.printMyQues()
 
 
