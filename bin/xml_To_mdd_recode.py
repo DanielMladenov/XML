@@ -60,7 +60,7 @@ class xmlImport(object):
         return 1
     
     def getFlatQuestionLastPosition(self):
-        return 0
+        pass
 
 
 
