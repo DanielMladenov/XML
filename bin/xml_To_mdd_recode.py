@@ -1,6 +1,7 @@
 from turtle import left
 import xml.etree.ElementTree as ET
 import re
+import pandas as pd
 
 class xmlImport(object):
     """docstring for xmlReader"""
@@ -36,14 +37,13 @@ class xmlImport(object):
             if self.listQues[i].find(self.standardDelimiter) != -1:
                 firstPosition = self.getNoFlatQuestionFirstPosition( self.quesNameArr(i), self.listQues[i].find(self.standardDelimiter))
                 midPosition = self.getNoFlatQuestionMidPosition()
-                lastPosition = self.getFlatQuestionLastPosition()
+                lastPosition = self.getFlatQuestionLastPosition( self.quesNameArr(i), self.listQues[i].find(self.standardDelimiter))
                 self.matrix.append([firstPosition,midPosition,lastPosition])
-            else:
-                pass
+            else:                
                 self.matrix.append([0,0,0])
 
     def getNoFlatQuestionFirstPosition(self, arr,delimPosition):
-        if len(arr) == 3:
+        if len(arr) == 3:    
             if arr[1][:delimPosition] == arr[0][:delimPosition]:  #check if the current quesName (left from the delim) match with the previous question names
                 return 1
             elif arr[1][:delimPosition] == arr[2][:delimPosition]:    #check if the current quesName (left from the delim) match with the next question name
@@ -59,13 +59,23 @@ class xmlImport(object):
     def getNoFlatQuestionMidPosition(self):
         return 1
     
-    def getFlatQuestionLastPosition(self):
-        pass
+    def getFlatQuestionLastPosition(self, arr,delimPosition):
+        postFix = arr[1][delimPosition+1:]
+        if re.search('[0-9]', postFix):
+            return 1
+        else:
+            return 0
+            
 
 
 
     def printMyQues(self):
         print(self.matrix)
+
+    def flatQuesToDF(self, type):
+        if type.lower() == 'flat':            
+            df = pd.DataFrame(zip(self.listQues, self.matrix), columns=['quesName', 'matrix'])
+            print(df)
 
 
 
@@ -75,6 +85,7 @@ class xmlImport(object):
 xmlTest = xmlImport(r'docs\147736_SurveyData.xml')
 xmlTest.getLayout()
 xmlTest.getNoFlatQuestionMatrix()
+xmlTest.flatQuesToDF('flat')
 #xmlTest.printMyQues()
 
 
