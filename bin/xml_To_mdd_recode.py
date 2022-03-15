@@ -33,7 +33,7 @@ class xmlImport(object):
             return [self.listQues[i-1], self.listQues[i]]
 
     def getNoFlatQuestionMatrix(self):
-        for i in range(1, self.listQuesLen):
+        for i in range(0, self.listQuesLen):
             if self.listQues[i].find(self.standardDelimiter) != -1:
                 firstPosition = self.getNoFlatQuestionFirstPosition( self.quesNameArr(i), self.listQues[i].find(self.standardDelimiter))
                 midPosition = self.getNoFlatQuestionMidPosition()
@@ -67,15 +67,16 @@ class xmlImport(object):
             return 0
             
 
-
-
     def printMyQues(self):
         print(self.matrix)
 
     def flatQuesToDF(self, type):
         if type.lower() == 'flat':            
             df = pd.DataFrame(zip(self.listQues, self.matrix), columns=['quesName', 'matrix'])
-            print(df)
+            return df
+
+    def csvExport(self, df, name):
+        df.to_csv('docs\\'+name+'.csv')
 
 
 
@@ -85,7 +86,7 @@ class xmlImport(object):
 xmlTest = xmlImport(r'docs\147736_SurveyData.xml')
 xmlTest.getLayout()
 xmlTest.getNoFlatQuestionMatrix()
-xmlTest.flatQuesToDF('flat')
-#xmlTest.printMyQues()
+
+xmlTest.csvExport(xmlTest.flatQuesToDF('flat'), "test")
 
 
