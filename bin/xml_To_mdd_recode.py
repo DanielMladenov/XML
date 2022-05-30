@@ -44,15 +44,17 @@ class xmlImport(object):
 
     def getNoFlatQuestionFirstPosition(self, arr,delimPosition):
         if len(arr) == 3:    
-            if arr[1][:delimPosition] == arr[0][:delimPosition]:  #check if the current quesName (left from the delim) match with the previous question names
+            if arr[1][:delimPosition+1] == arr[0][:delimPosition+1]:  #check if the current quesName (left from the delim) match with the previous question names
                 return 1
-            elif arr[1][:delimPosition] == arr[2][:delimPosition]:    #check if the current quesName (left from the delim) match with the next question name
+            elif arr[1][:delimPosition+1] == arr[2][:delimPosition+1]:    #check if the current quesName (left from the delim) match with the next question name
                 return 1
             else:
                 return 0
         elif len(arr) == 2:
-            if arr[1][:delimPosition] == arr[0][:delimPosition]:  #check if the current quesName (left from the delim) match with the previous question name
+            if arr[1][:delimPosition+1] == arr[0][:delimPosition+1]:  #check if the current quesName (left from the delim) match with the previous question name
                 return 1
+            else:
+                return 0
         else:
             print("Array of question names has unexpected len (number of elements). Number of elements should be 2 or 3")
 
@@ -61,7 +63,7 @@ class xmlImport(object):
     
     def getFlatQuestionLastPosition(self, arr,delimPosition):
         postFix = arr[1][delimPosition+1:]
-        if re.search('[0-9]', postFix):
+        if re.search('^[0-9]', postFix):
             return 1
         else:
             return 0
